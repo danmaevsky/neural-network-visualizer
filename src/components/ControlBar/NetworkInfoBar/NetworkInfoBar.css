@@ -1,0 +1,58 @@
+.NetworkInfoBar {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #e7e7e7;
+  height: 6.5vh;
+  margin: 0;
+  padding: 0;
+  color: #303030;
+  font-size: 2vh;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.NetworkInfoBar * {
+  padding: 0;
+  margin: 0;
+}
+
+.NetworkInfoBar h1 {
+  font-size: 2.25vh;
+  margin: 1.5vh;
+  margin-left: 1vw;
+}
+
+.NetworkInfoBar .networkInfoBarTextArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.NetworkInfoBar .networkInfoBarText {
+  padding-left: 7vmin;
+}
+
+.NetworkInfoBar .networkInfoBarText p {
+  font-size: 1.5vh;
+  margin-top: 0.7vh;
+  margin-bottom: 0.7vh;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  justify-items: left;
+}
+/*# sourceMappingURL=NetworkInfoBar.css.map */
