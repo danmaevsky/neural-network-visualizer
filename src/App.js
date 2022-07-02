@@ -4,13 +4,14 @@ import { useState, useEffect } from "react";
 import { Tensor } from "./Helpers";
 import useArray from "./hooks/useArray";
 import { ControlBar } from "./components/ControlBar/ControlBar";
+import { ModelViewPort } from "./components/ModelViewPort/ModelViewPort";
 
 function App() {
   // states that must be communicated between ControlBar and ModelViewPort must be stored here
   const [modelParameters, setModelParameters] = useState({
-    type: "mlp",
-    numLayers: "0",
-    numNeuronsPerLayer: [],
+    networkType: null,
+    dataset: null,
+    numNeuronsPerLayer: [0],
     activationFunctions: [],
   });
   const [selectedLayer, setSelectedLayer] = useState(null);
@@ -43,7 +44,8 @@ function App() {
 
   return (
     <div className="App">
-      <ControlBar modelParameters={modelParameters}></ControlBar>
+      <ControlBar modelParameters={modelParameters} setModelParameters={setModelParameters}></ControlBar>
+      <ModelViewPort />
     </div>
   );
 }

@@ -1,1 +1,4 @@
-/* No CSS *//*# sourceMappingURL=ModelViewPort.css.map */
+.modelViewPort {
+  height: calc(100vh - 12.5vh);
+}
+/*# sourceMappingURL=ModelViewPort.css.map */

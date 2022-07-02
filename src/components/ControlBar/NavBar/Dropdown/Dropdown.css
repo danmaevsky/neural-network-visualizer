@@ -1,8 +1,17 @@
-.Dropdown {
-  padding: 1.5vh;
+.dropdown {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  cursor: pointer;
+  color: white;
+  padding: 1vh;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
 }
 
-.Dropdown img {
+.dropdown img {
   height: 1vh;
   width: 1.3vh;
   padding-left: 0.5vh;
@@ -10,7 +19,103 @@
   margin: 0;
 }
 
-.Dropdown:hover {
-  cursor: pointer;
+.dropdown .arrowDown {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  height: 1vh;
+  width: 1vh;
+  margin: 0;
+}
+
+.dropdown .arrowDown path {
+  fill: white;
+  -webkit-transition: fill 0.4s;
+  transition: fill 0.4s;
+}
+
+.dropdown .menuItems {
+  background-color: #2f4565;
+  font-size: 1.5vh;
+  position: absolute;
+  top: 5.3vh;
+  left: 0vh;
+  padding: 1vh;
+  border-radius: 0 0 0.7vh 0.7vh;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.dropdown .menuItems .menuItem {
+  text-align: left;
+  min-width: 12vh;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vh 0 1vh 0;
+  z-index: 10;
+  color: #fff;
+}
+
+.dropdown .menuItems .menuItem:hover {
+  color: #cbcbcb;
+}
+
+.dropdown .menuItems .selectedItem {
+  text-align: left;
+  min-width: 12vh;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vh 0 1vh 0;
+  z-index: 10;
+  color: #00d18b;
+}
+
+.dropdown:hover {
+  color: #00d18b;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.dropdown:hover path {
+  fill: #00d18b;
+  -webkit-transition: fill 0.4s;
+  transition: fill 0.4s;
+}
+
+.dropdown:focus {
+  color: #00d18b;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.dropdown:focus .arrowDown {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.dropdown:focus .arrowDown path {
+  fill: #00d18b;
+  -webkit-transition: fill 0.4s;
+  transition: fill 0.4s;
 }
 /*# sourceMappingURL=Dropdown.css.map */

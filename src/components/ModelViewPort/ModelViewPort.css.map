@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,MAAM,EAAE,oBAAoB;CAAG",
     "sources": [
         "ModelViewPort.sass"
     ],

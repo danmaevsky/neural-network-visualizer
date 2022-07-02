@@ -4,15 +4,12 @@ import { NetworkInfoBar } from "./NetworkInfoBar/NetworkInfoBar";
 
 export function ControlBar(props) {
   const modelParameters = props.modelParameters;
+  const setModelParameters = props.setModelParameters;
 
   return (
-    <div>
-      <NavBar></NavBar>
-      <NetworkInfoBar
-        networkType={modelParameters.type}
-        numLayers={modelParameters.numLayers}
-        numNeuronsPerLayer={modelParameters.numNeuronsPerLayer}
-      ></NetworkInfoBar>
+    <div className="controlBar">
+      <NavBar modelParameters={modelParameters} setModelParameters={setModelParameters}></NavBar>
+      <NetworkInfoBar modelParameters={modelParameters}></NetworkInfoBar>
     </div>
   );
 }
