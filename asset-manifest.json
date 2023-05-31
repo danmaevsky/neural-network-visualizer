@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/neural-network-visualizer/static/css/main.c1b79e27.css",
+    "main.js": "/neural-network-visualizer/static/js/main.d81e1f95.js",
+    "static/js/787.e4170cb7.chunk.js": "/neural-network-visualizer/static/js/787.e4170cb7.chunk.js",
+    "static/media/SynapseInfoBox.png": "/neural-network-visualizer/static/media/SynapseInfoBox.5fc2b4e15b9d5fdf4f9a.png",
+    "static/media/NeuronInfoBox.png": "/neural-network-visualizer/static/media/NeuronInfoBox.bf49063c05108f81e373.png",
+    "static/media/CNNLayerInfoBox.png": "/neural-network-visualizer/static/media/CNNLayerInfoBox.61bb43e537da3ffed8d0.png",
+    "static/media/MLPLayerInfoBox.png": "/neural-network-visualizer/static/media/MLPLayerInfoBox.c5098ee72fc574578f65.png",
+    "static/media/FilterInfoBox.png": "/neural-network-visualizer/static/media/FilterInfoBox.7877761777a254edc87c.png",
+    "static/media/Brain.svg": "/neural-network-visualizer/static/media/Brain.b7f0001be04dbf08ba9063ac05accf2d.svg",
+    "static/media/removeFilterButton.svg": "/neural-network-visualizer/static/media/removeFilterButton.75989e8f3969f1006c9f668a86318cca.svg",
+    "static/media/addFilterButton.svg": "/neural-network-visualizer/static/media/addFilterButton.2b827c85019b34dfcd6c447f307e87a8.svg",
+    "static/media/removeLayerButton.svg": "/neural-network-visualizer/static/media/removeLayerButton.5079a73585ca772afffec92bb43faf0e.svg",
+    "static/media/Test.svg": "/neural-network-visualizer/static/media/Test.c0d61f602670c8a3bb90dce118b352e6.svg",
+    "static/media/logo.svg": "/neural-network-visualizer/static/media/logo.c5fe7ce79f70870ff3394f4fea4c875d.svg",
+    "static/media/sigmoid.svg": "/neural-network-visualizer/static/media/sigmoid.d78f2d9f3d2ff208d40c6dc142bd0d6c.svg",
+    "static/media/addLayerButton.svg": "/neural-network-visualizer/static/media/addLayerButton.27b823c1f036a02c108e10775a58f639.svg",
+    "static/media/leakyrelu.svg": "/neural-network-visualizer/static/media/leakyrelu.a588af8e2ddd616a2cec8b31ecc3df95.svg",
+    "static/media/removeNeuronButton.svg": "/neural-network-visualizer/static/media/removeNeuronButton.2aa4b9c089a22f7faa50f4c926f66018.svg",
+    "static/media/swish.svg": "/neural-network-visualizer/static/media/swish.ba73e57c26756d7eb7e38fa6aa5e8463.svg",
+    "static/media/tanh.svg": "/neural-network-visualizer/static/media/tanh.70f4d5e49eb3f55362f52bbc9a34a224.svg",
+    "static/media/relu.svg": "/neural-network-visualizer/static/media/relu.cdcf2c994dc9b060765abd7558003621.svg",
+    "static/media/GreenFilter.svg": "/neural-network-visualizer/static/media/GreenFilter.16bc0d4e373ee85e2c7c8c6b3271a4aa.svg",
+    "static/media/BlueFilter.svg": "/neural-network-visualizer/static/media/BlueFilter.ccbe5bb51fe3dcfdc5272bdd1ab9a495.svg",
+    "static/media/RedFilter.svg": "/neural-network-visualizer/static/media/RedFilter.58603888b3c7e1c5179769ec8054cce8.svg",
+    "static/media/addNeuronButton.svg": "/neural-network-visualizer/static/media/addNeuronButton.2bc20216b628e33b78dd67cee5e827f0.svg",
+    "static/media/elu.svg": "/neural-network-visualizer/static/media/elu.63f8778ded2e7f21bc31e18326dccfa2.svg",
+    "index.html": "/neural-network-visualizer/index.html",
+    "static/media/warningTriangle.svg": "/neural-network-visualizer/static/media/warningTriangle.5184e76aac177e0cae307f4723363d42.svg",
+    "static/media/Forward.svg": "/neural-network-visualizer/static/media/Forward.4c6da223667f62e0569fe5b486de48e9.svg",
+    "static/media/Back.svg": "/neural-network-visualizer/static/media/Back.c4a1ba09d63de4d485addca6d4422996.svg",
+    "static/media/Pause.svg": "/neural-network-visualizer/static/media/Pause.bde29e7f067929061c2bb463a8a1ad15.svg",
+    "static/media/Play.svg": "/neural-network-visualizer/static/media/Play.3ea9adc08a5201d6534c33d5bacfe767.svg",
+    "main.c1b79e27.css.map": "/neural-network-visualizer/static/css/main.c1b79e27.css.map",
+    "main.d81e1f95.js.map": "/neural-network-visualizer/static/js/main.d81e1f95.js.map",
+    "787.e4170cb7.chunk.js.map": "/neural-network-visualizer/static/js/787.e4170cb7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1b79e27.css",
+    "static/js/main.d81e1f95.js"
+  ]
+}
