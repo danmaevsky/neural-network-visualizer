@@ -1,0 +1,113 @@
+.MLPLayerInfoBox
+    font-size: 2vh
+    outline: none
+    position: absolute
+    top: 0.5vh
+    right: 0.6vh
+    animation: slideIn 0.5s
+    width: 35vh
+    height: calc(100vh - 14vh)
+    background-color: white
+    border: solid 0.3vh
+    border-radius: 0.5vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5vh
+    .layerHeader
+        width: 30vh
+        padding-top: 2vh
+        font-size: 3.5vh
+    .propertiesHeader
+        margin-top: -6vh
+        width: 30vh
+        font-size: 3.5vh
+
+    .layerInfoBoxInfo
+        width: 30vh
+
+    .properties
+        display: flex
+        flex-direction: column
+        gap: 7vh
+        p
+            align-self: flex-start
+
+    .numNeuronsText
+        display: flex
+        width: 30vh
+        justify-content: space-between
+
+    .neuronButtons
+        display: flex
+        flex-direction: column
+        height: 15vh
+        width: 30vh
+        margin-top: -5vh
+        div
+            display: flex
+            justify-content: space-between
+            width: 30vh
+        .warningMessage
+            color: #a52a2a
+            font-size: 1.5vh
+
+        .numNeuronsButton
+            height: 10vh
+            width: 14vh
+            border-radius: 0.5vh
+            transition: filter 0.2s, background-color 0.2s
+        .numNeuronsButton:hover
+            cursor: pointer
+            background-color: #f0f0f0
+            transition: filter 0.2s, background-color 0.2s
+        .numNeuronsButton:hover:active
+            cursor: pointer
+            background-color: #e0e0e0
+            transition: filter 0.2s, background-color 0.2s
+        .disabledNumNeuronsButton
+            cursor: default
+            height: 10vh
+            width: 14vh
+            border-radius: 0.5vh
+            background-color: #f0f0f0
+            filter: brightness(90%)
+            transition: filter 0.2s, background-color 0.2s
+
+    .activationFunctions
+        margin-top: -6vh
+        display: flex
+        flex-direction: column
+        gap: 3vh
+        width: 30vh
+        justify-content: space-between
+        .functionButtonsRow
+            display: flex
+            width: 30vh
+            justify-content: space-evenly
+            .selectedFunctionButton
+                background-color: #e3f2ff
+                transition: background-color 0.2s
+            .selectedFunctionButton:hover
+                background-color: #d6e8f9
+                transition: background-color 0.2s
+            .selectedFunctionButton:hover:active
+                background-color: #c3d9ed
+                transition: background-color 0.2s
+            .disabledFunctionButton
+                cursor: default
+                background-color: #e2e2e2
+                cursor: default
+            input
+                cursor: pointer
+                height: 11vh
+                width: 11vh
+                transition: background-color 0.2s
+            .functionButton:hover
+                background-color: #f0f0f0
+                transition: background-color 0.2s
+            .functionButton:hover:active
+                background-color: #dfdfdf
+                transition: background-color 0.2s
+        p
+            align-self: flex-start

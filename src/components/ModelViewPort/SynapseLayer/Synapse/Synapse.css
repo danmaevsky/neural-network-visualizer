@@ -1,0 +1,297 @@
+/* ----------------------
+ * VARS */
+/* ---------------------- */
+/* ----------------------
+ * KEYFRAMES */
+/* ---------------------- */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animate--activate {
+  0% {
+    stroke: #fff;
+  }
+  10% {
+    stroke: #73b9ff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #73b9ff;
+  }
+}
+@keyframes animate--deactivate {
+  0% {
+    stroke: #73b9ff;
+  }
+  100% {
+    stroke: #fff;
+  }
+}
+@keyframes animate--backpropWash-darkGreen-activate-outerLine {
+  0% {
+    stroke: #606060;
+  }
+  100% {
+    stroke: #2f6541;
+  }
+}
+@keyframes animate--backpropWash-darkGreen-activate-middleLine {
+  0% {
+    stroke: #f0f0f0;
+  }
+  100% {
+    stroke: #47ac69;
+  }
+}
+@keyframes animate--backpropWash-darkGreen-activate-innerLine {
+  0% {
+    stroke: #fff;
+  }
+  100% {
+    stroke: #69c587;
+  }
+}
+@keyframes animate--backpropWash-green-activate-outerLine {
+  0% {
+    stroke: #606060;
+  }
+  100% {
+    stroke: #71c18c;
+  }
+}
+@keyframes animate--backpropWash-green-activate-middleLine {
+  0% {
+    stroke: #f0f0f0;
+  }
+  100% {
+    stroke: #8fe1aa;
+  }
+}
+@keyframes animate--backpropWash-green-activate-innerLine {
+  0% {
+    stroke: #fff;
+  }
+  100% {
+    stroke: #b3ffcd;
+  }
+}
+@keyframes animate--backpropWash-lightGreen-activate-outerLine {
+  0% {
+    stroke: #606060;
+  }
+  100% {
+    stroke: #b0ffca;
+  }
+}
+@keyframes animate--backpropWash-lightGreen-activate-middleLine {
+  0% {
+    stroke: #f0f0f0;
+  }
+  100% {
+    stroke: #c4ffd8;
+  }
+}
+@keyframes animate--backpropWash-lightGreen-activate-innerLine {
+  0% {
+    stroke: #fff;
+  }
+  100% {
+    stroke: #f7fffa;
+  }
+}
+@keyframes animate--backpropWash-darkRed-activate-outerLine {
+  0% {
+    stroke: #606060;
+  }
+  100% {
+    stroke: #b25858;
+  }
+}
+@keyframes animate--backpropWash-darkRed-activate-middleLine {
+  0% {
+    stroke: #f0f0f0;
+  }
+  100% {
+    stroke: #f58e8b;
+  }
+}
+@keyframes animate--backpropWash-darkRed-activate-innerLine {
+  0% {
+    stroke: #fff;
+  }
+  100% {
+    stroke: #ffdbdb;
+  }
+}
+@keyframes animate--backpropWash-red-activate-outerLine {
+  0% {
+    stroke: #606060;
+  }
+  100% {
+    stroke: #f58e8b;
+  }
+}
+@keyframes animate--backpropWash-red-activate-middleLine {
+  0% {
+    stroke: #f0f0f0;
+  }
+  100% {
+    stroke: #ffdbdb;
+  }
+}
+@keyframes animate--backpropWash-red-activate-innerLine {
+  0% {
+    stroke: #fff;
+  }
+  100% {
+    stroke: #ffcac4;
+  }
+}
+@keyframes animate--backpropWash-lightRed-activate-outerLine {
+  0% {
+    stroke: #606060;
+  }
+  100% {
+    stroke: #ffc8c8;
+  }
+}
+@keyframes animate--backpropWash-lightRed-activate-middleLine {
+  0% {
+    stroke: #f0f0f0;
+  }
+  100% {
+    stroke: #ffe7e7;
+  }
+}
+@keyframes animate--backpropWash-lightRed-activate-innerLine {
+  0% {
+    stroke: #fff;
+  }
+  100% {
+    stroke: #ffffff;
+  }
+}
+/* ----------------------
+ * CLASSES */
+/* ---------------------- */
+.synapse {
+  animation: fadeIn 1s;
+}
+.synapse_animate--activate .innerLine {
+  stroke-dasharray: 0.5vh;
+  stroke-dashoffset: 15vh;
+  stroke-linecap: round;
+  animation: animate--activate 1s ease-in forwards;
+}
+
+.synapse_animate--deactivate .innerLine {
+  stroke-dasharray: 0.5vh;
+  stroke-linecap: round;
+  animation: animate--deactivate 0.5s forwards;
+}
+
+.synapse_animate--backpropWash-darkGreen-activate .outerLine {
+  stroke: #2f6541;
+  transition: stroke 0.5s;
+}
+.synapse_animate--backpropWash-darkGreen-activate .middleLine {
+  stroke: #47ac69;
+  transition: stroke 0.5s;
+}
+.synapse_animate--backpropWash-darkGreen-activate .innerLine {
+  stroke: #69c587;
+  transition: stroke 0.5s;
+}
+
+.synapse_animate--backpropWash-green-activate .outerLine {
+  stroke: #71c18c;
+  transition: stroke 0.5s;
+}
+.synapse_animate--backpropWash-green-activate .middleLine {
+  stroke: #8fe1aa;
+  transition: stroke 0.5s;
+}
+.synapse_animate--backpropWash-green-activate .innerLine {
+  stroke: #b3ffcd;
+  transition: stroke 0.5s;
+}
+
+.synapse_animate--backpropWash-lightGreen-activate .outerLine {
+  stroke: #b0ffca;
+  transition: stroke 0.5s;
+}
+.synapse_animate--backpropWash-lightGreen-activate .middleLine {
+  stroke: #c4ffd8;
+  transition: stroke 0.5s;
+}
+.synapse_animate--backpropWash-lightGreen-activate .innerLine {
+  stroke: #f7fffa;
+  transition: stroke 0.5s;
+}
+
+.synapse_animate--backpropWash-darkRed-activate .outerLine {
+  stroke: #b25858;
+  transition: stroke 0.5s;
+}
+.synapse_animate--backpropWash-darkRed-activate .middleLine {
+  stroke: #f58e8b;
+  transition: stroke 0.5s;
+}
+.synapse_animate--backpropWash-darkRed-activate .innerLine {
+  stroke: #ffdbdb;
+  transition: stroke 0.5s;
+}
+
+.synapse_animate--backpropWash-red-activate .outerLine {
+  stroke: #f58e8b;
+  transition: stroke 0.5s;
+}
+.synapse_animate--backpropWash-red-activate .middleLine {
+  stroke: #ffdbdb;
+  transition: stroke 0.5s;
+}
+.synapse_animate--backpropWash-red-activate .innerLine {
+  stroke: #ffcac4;
+  transition: stroke 0.5s;
+}
+
+.synapse_animate--backpropWash-lightRed-activate .outerLine {
+  stroke: #b0ffca;
+  transition: stroke 0.5s;
+}
+.synapse_animate--backpropWash-lightRed-activate .middleLine {
+  stroke: #ffe7e7;
+  transition: stroke 0.5s;
+}
+.synapse_animate--backpropWash-lightRed-activate .innerLine {
+  stroke: #ffffff;
+  transition: stroke 0.5s;
+}
+
+.synapse_animate--backpropWash-neutral-activate .outerLine {
+  stroke: #606060;
+  transition: stroke 0.5s;
+}
+.synapse_animate--backpropWash-neutral-activate .middleLine {
+  stroke: #f0f0f0;
+  transition: stroke 0.5s;
+}
+.synapse_animate--backpropWash-neutral-activate .innerLine {
+  stroke: #fff;
+  transition: stroke 0.5s;
+}
+
+.isShiftSelected .outerLine {
+  stroke: #89d2ff;
+}
+.isShiftSelected .middleLine {
+  stroke: #c5edff;
+}
+.isShiftSelected .innerLine {
+  stroke: #ffffff;
+}/*# sourceMappingURL=Synapse.css.map */

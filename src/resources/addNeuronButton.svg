@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="106" height="99" viewBox="0 0 106 99">
+  <g id="AddNeuronButton" transform="translate(-1281 -212)">
+    <rect id="Rectangle_17" data-name="Rectangle 17" width="106" height="99" transform="translate(1281 212)" fill="none"/>
+    <path id="Path_45" data-name="Path 45" d="M11.946,0H15.2L9.68-15.378H6.094L.572,0H3.806L4.818-2.926h6.116ZM10.1-5.39H5.654l2.222-6.424Zm6.38-.748C16.478-2.332,18.942.2,22.044.2a4.606,4.606,0,0,0,4-2V0h3.124V-16.28H26.048v5.786a5,5,0,0,0-3.982-1.892C18.942-12.386,16.478-9.944,16.478-6.138Zm9.592.044a3.282,3.282,0,0,1-3.234,3.586,3.331,3.331,0,0,1-3.212-3.63A3.251,3.251,0,0,1,22.836-9.68,3.282,3.282,0,0,1,26.07-6.094Zm5.324-.044C31.394-2.332,33.858.2,36.96.2a4.606,4.606,0,0,0,4-2V0h3.124V-16.28H40.964v5.786a5,5,0,0,0-3.982-1.892C33.858-12.386,31.394-9.944,31.394-6.138Zm9.592.044a3.282,3.282,0,0,1-3.234,3.586,3.331,3.331,0,0,1-3.212-3.63A3.251,3.251,0,0,1,37.752-9.68,3.282,3.282,0,0,1,40.986-6.094Z" transform="translate(1311 284)" fill="#303030"/>
+    <g id="Ellipse_24" data-name="Ellipse 24" transform="translate(1320 231)" fill="#fff" stroke="#303030" stroke-width="1">
+      <circle cx="14" cy="14" r="14" stroke="none"/>
+      <circle cx="14" cy="14" r="13.5" fill="none"/>
+    </g>
+    <path id="Icon_awesome-plus" data-name="Icon awesome-plus" d="M13.444,7.938H8.79V2.25h-3.1V7.938H0v3.1H5.688v5.688h3.1V11.04h5.688v-3.1Z" transform="translate(1337.332 244.442)" fill="#50b438" stroke="#303030" stroke-width="1"/>
+  </g>
+</svg>

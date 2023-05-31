@@ -1,0 +1,244 @@
+@keyframes popIn
+    0%
+        transform: scale(0.8, 0.8)
+    50%
+        transform: scale(1.01, 1.01)
+
+    100%
+        transform: scale(1, 1)
+
+@keyframes slideDown
+    0%
+        transform: translate(0, -4vh)
+    50%
+        transform: translate(0, 0.6vh)
+    100%
+        transform: translate(0, 0)
+
+@keyframes slideUp
+    0%
+        transform: translate(0, 4vh)
+    50%
+        transform: translate(0, -0.6vh)
+    100%
+        transform: translate(0, 0)
+
+@keyframes innerCube
+    0%
+        transform: translateY(-2px)
+    50%
+        transform: translateY(2px)
+    100%
+        transform: translateY(-2px)
+
+@keyframes rotateNeg360
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(-360deg)
+
+.innerCube
+    transform-origin: center
+    animation: innerCube infinite 1s
+
+.innerCube:hover
+    fill: black
+
+.redFilter
+    .cls-1
+        fill: #c66
+    .cls-1,.cls-2,.cls-3,.cls-4,.cls-8
+        stroke: #231f20
+    .cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8
+        stroke-linecap: round
+        stroke-linejoin: round
+    .cls-1,.cls-3,.cls-4,.cls-8
+        stroke-width: 0.5px
+    .cls-2,.cls-8
+        fill: none
+    .cls-2,.cls-5,.cls-6,.cls-7
+        stroke-width: 0.25px
+    .cls-3
+        fill: #e67372
+    .cls-4
+        fill: #f37e80
+    .cls-5
+        fill: #cb9898
+    .cls-5,.cls-6,.cls-7
+        stroke: #303030
+    .cls-6
+        fill: #e6acac
+    .cls-7
+        fill: #f9bebf
+
+.orangeFilter
+    .cls-1
+        fill: #cdaa66
+    .cls-1,.cls-2,.cls-3,.cls-4,.cls-8
+        stroke: #231f20
+    .cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8
+        stroke-linecap: round
+        stroke-linejoin: round
+    .cls-1,.cls-3,.cls-4,.cls-8
+        stroke-width: 0.5px
+    .cls-2,.cls-8
+        fill: none
+    .cls-2,.cls-5,.cls-6,.cls-7
+        stroke-width: 0.25px
+    .cls-3
+        fill: #e5bf72
+    .cls-4
+        fill: #f4cc7e
+    .cls-5
+        fill: #cbba99
+    .cls-5,.cls-6,.cls-7
+        stroke: #303030
+    .cls-6
+        fill: #e6d3ac
+    .cls-7
+        fill: #f9e5be
+
+.greenFilter
+    .cls-1
+        fill: #89c767
+    .cls-1,.cls-2,.cls-3,.cls-4,.cls-8
+        stroke: #231f20
+    .cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8
+        stroke-linecap: round
+        stroke-linejoin: round
+    .cls-1,.cls-3,.cls-4,.cls-8
+        stroke-width: 0.5px
+    .cls-2,.cls-8
+        fill: none
+    .cls-2,.cls-5,.cls-6,.cls-7
+        stroke-width: 0.25px
+    .cls-3
+        fill: #a0cf72
+    .cls-4
+        fill: #add479
+    .cls-5
+        fill: #a9cb98
+    .cls-5,.cls-6,.cls-7
+        stroke: #303030
+    .cls-6
+        fill: #c1dfac
+    .cls-7
+        fill: #d4e8bb
+
+.tealFilter
+    .cls-1
+        fill: #6dc497
+    .cls-1,.cls-2,.cls-3,.cls-4,.cls-8
+        stroke: #231f20
+    .cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8
+        stroke-linecap: round
+        stroke-linejoin: round
+    .cls-1,.cls-3,.cls-4,.cls-8
+        stroke-width: 0.5px
+    .cls-2,.cls-8
+        fill: none
+    .cls-2,.cls-5,.cls-6,.cls-7
+        stroke-width: 0.25px
+    .cls-3
+        fill: #86cba3
+    .cls-4
+        fill: #93d0ab
+    .cls-5
+        fill: #98cbb1
+    .cls-5,.cls-6,.cls-7
+        stroke: #303030
+    .cls-6
+        fill: #b0dcc5
+    .cls-7
+        fill: #c5e5d3
+
+.blueFilter
+    .cls-1
+        fill: #6ac
+    .cls-1,.cls-2,.cls-3,.cls-4,.cls-8
+        stroke: #231f20
+    .cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8
+        stroke-linecap: round
+        stroke-linejoin: round
+    .cls-1,.cls-3,.cls-4,.cls-8
+        stroke-width: 0.5px
+    .cls-2,.cls-8
+        fill: none
+    .cls-2,.cls-5,.cls-6,.cls-7
+        stroke-width: 0.25px
+    .cls-3
+        fill: #73bfe5
+    .cls-4
+        fill: #7fccf1
+    .cls-5
+        fill: #99bbcb
+    .cls-5,.cls-6,.cls-7
+        stroke: #303030
+    .cls-6
+        fill: #acd2e4
+    .cls-7
+        fill: #bfe6fa
+
+.purpleFilter
+    .cls-1
+        fill: #7266ae
+    .cls-1,.cls-2,.cls-3,.cls-4,.cls-8
+        stroke: #231f20
+    .cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8
+        stroke-linecap: round
+        stroke-linejoin: round
+    .cls-1,.cls-3,.cls-4,.cls-8
+        stroke-width: 0.5px
+    .cls-2,.cls-8
+        fill: none
+    .cls-2,.cls-5,.cls-6,.cls-7
+        stroke-width: 0.25px
+    .cls-3
+        fill: #7a71b4
+    .cls-4
+        fill: #857cba
+    .cls-5
+        fill: #a098ca
+    .cls-5,.cls-6,.cls-7
+        stroke: #303030
+    .cls-6
+        fill: #b6acd4
+    .cls-7
+        fill: #c7bdde
+
+.filter
+    transition: filter 0.2s
+
+.filter:hover
+    filter: brightness(90%)
+    transition: filter 0.2s
+
+.filter:hover:active
+    filter: brightness(80%)
+    transition: filter 0.2s
+
+.popIn
+    animation: popIn 0.5s
+
+.slideDown
+    animation: slideDown 0.5s
+
+.slideUp
+    animation: slideUp 0.5s
+
+.darkenShadow
+    opacity: 0
+.darkenShadow:hover
+    opacity: 0.1
+
+.filterSelectCircle
+    transform-origin: center
+    stroke-width: 3vh
+    animation: rotate360 1s infinite linear
+
+.hexagonMask
+    stroke-linecap: round
+    stroke-linejoin: round
+    stroke-width: 0.5vh
+    transform-origin: center
+    animation: rotateNeg360 1s infinite linear

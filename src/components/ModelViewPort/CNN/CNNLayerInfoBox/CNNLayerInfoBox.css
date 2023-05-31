@@ -1,0 +1,181 @@
+.CNNLayerInfoBox {
+  font-size: 2vh;
+  outline: none;
+  position: absolute;
+  top: 0.5vh;
+  right: 0.6vh;
+  animation: slideIn 0.5s;
+  width: 35vh;
+  height: 86vh;
+  background-color: white;
+  border: solid 0.3vh;
+  border-radius: 0.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+}
+.CNNLayerInfoBox .layerHeader {
+  width: 30vh;
+  padding-top: 2vh;
+  font-size: 3.5vh;
+}
+.CNNLayerInfoBox .propertiesHeader {
+  margin-top: -6vh;
+  width: 30vh;
+  font-size: 3.5vh;
+}
+.CNNLayerInfoBox .properties {
+  display: flex;
+  flex-direction: column;
+  gap: 7vh;
+}
+.CNNLayerInfoBox .properties p {
+  align-self: flex-start;
+}
+.CNNLayerInfoBox .numFiltersText {
+  margin-top: -4vh;
+  width: 30vh;
+  display: flex;
+  justify-content: space-between;
+}
+.CNNLayerInfoBox .filterSizeProperty {
+  margin-top: -4vh;
+  width: 30vh;
+  display: flex;
+  justify-content: space-between;
+}
+.CNNLayerInfoBox .filterSizeText {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 2.5vh;
+  margin-top: -5vh;
+  display: flex;
+  flex-direction: row;
+  width: 15vh;
+  height: 4vh;
+  justify-content: space-between;
+}
+.CNNLayerInfoBox .filterSizeText p {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}
+.CNNLayerInfoBox .filterSizeText .filterSizeButton {
+  cursor: pointer;
+  height: 3vh;
+  width: 3vh;
+  padding: 0.5vh;
+  border-radius: 0.5vh;
+  transition: filter 0.2s, background-color 0.2s;
+}
+.CNNLayerInfoBox .filterSizeText .filterSizeButton:hover {
+  background-color: #f0f0f0;
+}
+.CNNLayerInfoBox .filterSizeText .filterSizeButton:hover path {
+  fill: #d3d3d3;
+  transition: fill 0.2s;
+}
+.CNNLayerInfoBox .filterSizeText .filterSizeButton:hover:active {
+  background-color: #e0e0e0;
+}
+.CNNLayerInfoBox .filterSizeText .filterSizeButton:hover:active path {
+  fill: #d3d3d3;
+  transition: fill 0.2s;
+}
+.CNNLayerInfoBox .filterSizeText .disabledFilterSizeButton {
+  border-radius: 0.5vh;
+  filter: brightness(90%);
+  background-color: #f0f0f0;
+  height: 3vh;
+  width: 3vh;
+  padding: 0.5vh;
+  transition: filter 0.2s, background-color 0.2s;
+}
+.CNNLayerInfoBox .filterSizeText .disabledFilterSizeButton path {
+  fill: #d3d3d3;
+  transition: fill 0.2s;
+}
+.CNNLayerInfoBox .filterButtons {
+  margin: -4vh;
+  display: flex;
+  flex-direction: column;
+  width: 30vh;
+}
+.CNNLayerInfoBox .filterButtons .editNumFiltersButton {
+  height: 10vh;
+  width: 14vh;
+  border-radius: 0.5vh;
+  transition: filter 0.2s, background-color 0.2s;
+}
+.CNNLayerInfoBox .filterButtons .editNumFiltersButton:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: background-color 0.2s;
+}
+.CNNLayerInfoBox .filterButtons .editNumFiltersButton:hover:active {
+  cursor: pointer;
+  background-color: #e0e0e0;
+  transition: background-color 0.2s;
+}
+.CNNLayerInfoBox .filterButtons .disabledEditNumFiltersButton {
+  cursor: default;
+  height: 10vh;
+  width: 14vh;
+  filter: brightness(90%);
+  background-color: #f0f0f0;
+  border-radius: 0.5vh;
+  transition: filter 0.2s, background-color 0.2s;
+}
+.CNNLayerInfoBox .filterButtons div {
+  display: flex;
+  width: 30vh;
+  justify-content: space-between;
+}
+.CNNLayerInfoBox .activationFunctions {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  width: 30vh;
+  justify-content: space-between;
+}
+.CNNLayerInfoBox .activationFunctions .functionButtonsRow {
+  display: flex;
+  width: 30vh;
+  justify-content: space-evenly;
+}
+.CNNLayerInfoBox .activationFunctions .functionButtonsRow .selectedFunctionButton {
+  background-color: #e3f2ff;
+  transition: background-color 0.2s;
+}
+.CNNLayerInfoBox .activationFunctions .functionButtonsRow .selectedFunctionButton:hover {
+  background-color: #d6e8f9;
+  transition: background-color 0.2s;
+}
+.CNNLayerInfoBox .activationFunctions .functionButtonsRow .selectedFunctionButton:hover:active {
+  background-color: #c3d9ed;
+  transition: background-color 0.2s;
+}
+.CNNLayerInfoBox .activationFunctions .functionButtonsRow .disabledFunctionButton {
+  cursor: default;
+  background-color: #e2e2e2;
+  cursor: default;
+}
+.CNNLayerInfoBox .activationFunctions .functionButtonsRow input {
+  cursor: pointer;
+  height: 11vh;
+  width: 11vh;
+  transition: background-color 0.2s;
+}
+.CNNLayerInfoBox .activationFunctions .functionButtonsRow .functionButton:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.2s;
+}
+.CNNLayerInfoBox .activationFunctions .functionButtonsRow .functionButton:hover:active {
+  background-color: #dfdfdf;
+  transition: background-color 0.2s;
+}
+.CNNLayerInfoBox .activationFunctions p {
+  align-self: flex-start;
+}/*# sourceMappingURL=CNNLayerInfoBox.css.map */

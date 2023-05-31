@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="142" height="142" viewBox="0 0 142 142">
+  <g id="ReLU" transform="translate(-558 -950)">
+    <g id="Path_15" data-name="Path 15" transform="translate(558 950)" fill="none">
+      <path d="M0,0H142V142H0Z" stroke="none"/>
+      <path d="M 1 1 L 1 141 L 141 141 L 141 1 L 1 1 M 0 0 L 142 0 L 142 142 L 0 142 L 0 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <path id="Path_16" data-name="Path 16" d="M0,0V94" transform="translate(629 962)" fill="none" stroke="#707070" stroke-width="2"/>
+    <line id="Line_161" data-name="Line 161" x1="120" transform="translate(570 1022)" fill="none" stroke="#707070" stroke-width="2"/>
+    <path id="Path_14" data-name="Path 14" d="M613.129,972.369l-51.868,51.26H501.008" transform="translate(68.056 -1.324)" fill="none" stroke="#59bc6d" stroke-width="5"/>
+    <path id="Path_43" data-name="Path 43" d="M-16.9-10.582c0,1.386-.77,2.288-2.486,2.288h-2.574V-12.8h2.574C-17.666-12.8-16.9-11.946-16.9-10.582Zm-8.14-4.774V0h3.08V-5.984H-20.5L-17.116,0h3.564l-3.674-6.226a4.434,4.434,0,0,0,3.5-4.422c0-2.574-1.848-4.708-5.544-4.708ZM-5.7-9.856a2.708,2.708,0,0,1,2.9,2.618H-8.58A2.83,2.83,0,0,1-5.7-9.856ZM.088-3.828H-3.234A2.511,2.511,0,0,1-5.676-2.354,2.852,2.852,0,0,1-8.6-5.17H.308A7.2,7.2,0,0,0,.4-6.358,5.722,5.722,0,0,0-5.61-12.386c-3.608,0-6.116,2.442-6.116,6.292A5.9,5.9,0,0,0-5.61.2,5.665,5.665,0,0,0,.088-3.828ZM2.64-15.356V0h8.14V-2.442H5.72V-15.356ZM12.694-5.874c0,4.048,2.772,6.028,6.138,6.028s6.27-1.98,6.27-6.028v-9.482H22v9.5C22-3.74,20.856-2.64,18.876-2.64c-1.958,0-3.1-1.1-3.1-3.212v-9.5h-3.08Z" transform="translate(629 1079)" fill="#303030"/>
+  </g>
+</svg>

@@ -1,0 +1,163 @@
+.dropdown {
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: relative;
+  cursor: pointer;
+  color: white;
+  padding: 1vh;
+  transition: color 0.4s;
+}
+.dropdown .arrowDown {
+  transform: rotate(0deg);
+  transition: transform 0.2s;
+  height: 1vh;
+  width: 1vh;
+  margin: 0;
+}
+.dropdown .arrowDown path {
+  fill: white;
+  transition: fill 0.4s;
+}
+.dropdown .menuItems {
+  background-color: #2f4565;
+  font-size: 1.5vh;
+  position: absolute;
+  top: 5.3vh;
+  left: 0vh;
+  padding: 1vh;
+  margin: 0vh;
+  border-radius: 0 0 0.7vh 0.7vh;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dropdown .menuItems .menuItem {
+  text-align: left;
+  min-width: 12vh;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vh 0 1vh 0;
+  z-index: 10;
+  color: #fff;
+}
+.dropdown .menuItems .menuItem:hover {
+  color: #cbcbcb;
+}
+.dropdown .menuItems .selectedItem {
+  text-align: left;
+  min-width: 12vh;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vh 0 1vh 0;
+  z-index: 10;
+  color: #00d18b;
+}
+
+.dropdown:hover {
+  color: #00d18b;
+  transition: color 0.4s;
+}
+.dropdown:hover path {
+  fill: #00d18b;
+  transition: fill 0.4s;
+}
+
+.dropdown:focus {
+  color: #00d18b;
+  transition: color 0.4s;
+}
+.dropdown:focus .arrowDown {
+  transform: rotate(180deg);
+  transition: transform 0.2s;
+}
+.dropdown:focus .arrowDown path {
+  fill: #00d18b;
+  transition: fill 0.4s;
+}
+
+.disabledDropdown {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: relative;
+  color: #999999;
+  transition: color 0.4s;
+  padding: 1vh;
+}
+.disabledDropdown .arrowDown {
+  transform: rotate(0deg);
+  transition: transform 0.2s;
+  height: 1vh;
+  width: 1vh;
+  margin: 0;
+}
+.disabledDropdown .arrowDown path {
+  fill: #999999;
+  transition: fill 0.4s;
+}
+
+.dropdownGlow {
+  color: #ffe175;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: relative;
+  cursor: pointer;
+  padding: 1vh;
+  transition: color 0.4s;
+}
+.dropdownGlow .arrowDown {
+  transform: rotate(0deg);
+  transition: transform 0.2s;
+  height: 1vh;
+  width: 1vh;
+  margin: 0;
+}
+.dropdownGlow .arrowDown path {
+  fill: #ffe175;
+  transition: fill 0.4s;
+}
+.dropdownGlow .menuItems {
+  background-color: #2f4565;
+  font-size: 1.5vh;
+  position: absolute;
+  top: 5.3vh;
+  left: 0vh;
+  padding: 1vh;
+  border-radius: 0 0 0.7vh 0.7vh;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dropdownGlow .menuItems .menuItem {
+  text-align: left;
+  min-width: 12vh;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vh 0 1vh 0;
+  z-index: 10;
+  color: #fff;
+}
+.dropdownGlow .menuItems .menuItem:hover {
+  color: #cbcbcb;
+}
+.dropdownGlow .menuItems .selectedItem {
+  text-align: left;
+  min-width: 12vh;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1vh 0 1vh 0;
+  z-index: 10;
+  color: #ffe175;
+}
+
+.dropdownGlow:focus .arrowDown {
+  transform: rotate(180deg);
+  transition: transform 0.2s;
+}/*# sourceMappingURL=Dropdown.css.map */

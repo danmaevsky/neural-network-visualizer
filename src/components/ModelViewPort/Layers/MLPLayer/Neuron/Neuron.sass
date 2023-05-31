@@ -1,0 +1,185 @@
+/* ---------------------
+ VARS
+/* ---------------------
+
+$neuron-base-color-circle: #d1d3d4
+$neuron-base-color-path1: #f1f2f2
+$neuron-base-color-path2: #fff
+$neuron-isSelected-color-circle: #fff4a0
+$neuron-isSelected-color-path1: #fff7c9
+$neuron-isSelected-color-path2: #fff
+$neuron-isShiftSelected-color-circle: #89d2ff
+$neuron-isShiftSelected-color-path1: #c5edff
+$neuron-isShiftSelected-color-path2: #ffffff
+$neuron-activated-color-circle: #90d3ff
+$neuron-activated-color-path1: #c0e6ff
+$neuron-activated-color-path2: #f4fbff
+
+/* ----------------------
+ KEYFRAMES
+/* ----------------------
+
+@keyframes popIn
+    0%
+        transform: scale(0.5, 0.5)
+    50%
+        transform: scale(1.05, 1.05)
+
+    100%
+        transform: scale(1, 1)
+
+@keyframes slideDown
+    0%
+        transform: translate(0, -4vh)
+    50%
+        transform: translate(0, 0.6vh)
+    100%
+        transform: translate(0, 0)
+
+@keyframes slideUp
+    0%
+        transform: translate(0, 4vh)
+    50%
+        transform: translate(0, -0.6vh)
+    100%
+        transform: translate(0, 0)
+
+@keyframes rotate360
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+
+@keyframes animate--activateNeuron-circle
+    0%
+        fill: $neuron-base-color-circle
+    100%
+        fill: $neuron-activated-color-circle
+
+@keyframes animate--activateNeuron-path1
+    0%
+        fill: $neuron-base-color-path1
+    100%
+        fill: $neuron-activated-color-path1
+
+@keyframes animate--activateNeuron-path2
+    0%
+        fill: $neuron-base-color-path2
+    100%
+        fill: $neuron-activated-color-path2
+
+@keyframes animate--deactivateNeuron-circle
+    0%
+        fill: $neuron-activated-color-circle
+    100%
+        fill: $neuron-base-color-circle
+
+@keyframes animate--deactivateNeuron-path1
+    0%
+        fill: $neuron-activated-color-path1
+    100%
+        fill: $neuron-base-color-path1
+
+@keyframes animate--deactivateNeuron-path2
+    0%
+        fill: $neuron-activated-color-path2
+
+    100%
+        fill: $neuron-base-color-path2
+
+.neuron
+    cursor: pointer
+    .cls-1
+        transition: fill 0.4s
+        fill: $neuron-base-color-circle
+        stroke: #231f20
+        stroke-miterlimit: 10
+        stroke-width: 2px
+    .cls-2
+        fill: $neuron-base-color-path1
+        transition: fill 0.4s
+    .cls-3
+        fill: $neuron-base-color-path2
+        transition: fill 0.4s
+
+.neuron:hover
+    .cls-1
+        fill: $neuron-isSelected-color-circle
+        transition: fill 0.4s
+
+    .cls-2
+        fill: $neuron-isSelected-color-path1
+        transition: fill 0.4s
+    .cls-3
+        fill: $neuron-isSelected-color-path2
+        transition: fill 0.4s
+
+.popIn
+    animation: popIn 0.5s
+
+.slideDown
+    animation: slideDown 0.5s
+
+.slideUp
+    animation: slideUp 0.5s
+
+.animate--activate
+    .cls-1
+        fill: $neuron-activated-color-circle
+        transition: fill 0.4s
+    .cls-2
+        fill: $neuron-activated-color-path1
+        transition: fill 0.4s
+    .cls-3
+        fill: $neuron-activated-color-path2
+        transition: fill 0.4s
+
+.animate--deactivate
+    .cls-1
+        fill: $neuron-base-color-circle
+        transition: fill 0.4s
+    .cls-2
+        fill: $neuron-base-color-path1
+        transition: fill 0.4s
+    .cls-3
+        fill: $neuron-base-color-path2
+        transition: fill 0.4s
+
+.isSelected
+    .cls-1
+        fill: $neuron-isSelected-color-circle
+        transition: fill 0.4s
+
+    .cls-2
+        fill: $neuron-isSelected-color-path1
+        transition: fill 0.4s
+    .cls-3
+        fill: $neuron-isSelected-color-path2
+        transition: fill 0.4s
+
+.isShiftSelected
+    .cls-1
+        fill: $neuron-isShiftSelected-color-circle
+        transition: fill 0.4s
+    .cls-2
+        fill: $neuron-isShiftSelected-color-path1
+        transition: fill 0.4s
+    .cls-3
+        fill: $neuron-isShiftSelected-color-path2
+        transition: fill 0.4s
+
+.isShiftSelected:hover
+    .cls-1
+        fill: $neuron-isShiftSelected-color-circle
+        transition: fill 0.4s
+    .cls-2
+        fill: $neuron-isShiftSelected-color-path1
+        transition: fill 0.4s
+    .cls-3
+        fill: $neuron-isShiftSelected-color-path2
+        transition: fill 0.4s
+
+.neuronSelectCircle
+    transform-origin: center
+    stroke-width: 0.5vh
+    animation: rotate360 1s infinite linear

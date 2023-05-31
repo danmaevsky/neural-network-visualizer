@@ -1,0 +1,29 @@
+@keyframes slideIn
+    0%
+        transform: translate(0, -4vh)
+        opacity: 0
+    100%
+        opacity: 1
+        tranform: translate(0, 0)
+
+.neuronInfoBox
+    outline: none
+    position: absolute
+    animation: slideIn 0.5s
+    height: calc(100vh - 14vh)
+    background-color: white
+    rect
+        fill: white
+        stroke: #303030
+
+    .neuronInfoBoxHeading
+        text
+            fill: #303030
+            font-weight: 500
+    .neuronInfoBoxProperty
+        text
+            fill: #303030
+            font-weight: 400
+
+    line
+        stroke: #464646

@@ -1,0 +1,196 @@
+.tutorialCards
+    background-color: white
+    position: absolute
+    top: 15vh
+    left: calc((100vw - 90vh) / 2)
+    height: 70vh
+    width: 90vh
+    border: solid 0.3vh
+    border-radius: 5px
+
+    button
+        cursor: pointer
+        position: absolute
+        top: 64vh
+        font-size: 1.8vh
+        height: 4.5vh
+        border: none
+        border-radius: 5px
+        background-color: #edb06b
+        font-weight: 600
+        transition: background-color 0.2s
+
+    button:hover
+        background-color: #fad28e
+        color: #3b3b3b
+        transition: background-color 0.2s
+
+    button:hover:active
+        background-color: #efc987
+        color: #3b3b3b
+        transition: background-color 0.2s, color 0.2s
+
+    p
+        white-space: normal
+        position: absolute
+        font-size: 2vh
+        width: 80vh
+        text-align: center
+
+    .tutorialHeader
+        position: absolute
+        top: 2vh
+        font-size: 3vh
+
+    .skipTutorialButton
+        left: 3vh
+        width: 15vh
+    .nextButton
+        right: 3vh
+        width: 8vh
+    .prevButton
+        right: 12vh
+        width: 12vh
+    .exitButton
+        right: 3vh
+        width: 8vh
+
+.tutorialWelcomeCard
+    display: flex
+    flex-direction: column
+
+    .tutorialWelcomeCardParagraph1
+        top: 44vh
+
+    .tutorialWelcomeCardParagraph2
+        top: 51vh
+
+    img
+        position: absolute
+        top: 6vh
+        height: 40vh
+        width: 40vh
+
+.tutorialCard1
+    display: flex
+    flex-direction: column
+    .tutorialCard1Paragraph1
+        top: 8vh
+    .tutorialCard1Paragraph2
+        top: 23vh
+    img
+        position: absolute
+        top: 40vh
+        height: 20vh
+        width: 20vh
+
+.tutorialCard2
+    display: flex
+    flex-direction: column
+    .tutorialCard2Paragraph1
+        top: 8vh
+    .tutorialCard2NetworkList
+        position: absolute
+        top: 21vh
+        display: flex
+        flex-direction: column
+        gap: 1vh
+        .tutorialCard2NetworkListItem
+            display: flex
+            flex-direction: column
+            gap: 0.2vh
+            p
+                position: relative
+                font-size: 1.7vh
+
+.tutorialCard3
+    display: flex
+    flex-direction: column
+    .tutorialCard3Paragraph1
+        top: 8vh
+    .tutorialCard3Paragraph2
+        top: 27vh
+    .tutorialCard3Paragraph3
+        top: 46vh
+    img
+        position: relative
+        width: 80vh
+        top: 37vh
+
+.tutorialCard4
+    display: flex
+    flex-direction: column
+    .tutorialCard4Paragraph1
+        top: 8vh
+    .tutorialCard4Paragraph2
+        top: 35vh
+    .tutorialCard4InfoBoxes
+        position: relative
+        top: 20vh
+        display: flex
+        gap: 10vh
+    img
+        height: 40vh
+
+.tutorialCard5
+    display: flex
+    flex-direction: column
+    .tutorialCard5Paragraph1
+        top: 10vh
+    .tutorialCard5Paragraph2
+        top: 47vh
+    img
+        position: absolute
+        width: 10vh
+    .tutorialCard5RedFilter
+        top: 32vh
+        left: 20vh
+    .tutorialCard5GreenFilter
+        top: 32vh
+        right: 20vh
+    .tutorialCard5BlueFilter
+        top: 32vh
+        left: 40vh
+
+.tutorialCard6
+    display: flex
+    flex-direction: column
+    .tutorialCard6Paragraph1
+        top: 8vh
+    .tutorialCard6VisualizeButton
+        position: absolute
+        width: 12vh
+        top: 15vh
+    .tutorialCard6Paragraph2
+        top: 21vh
+    .tutorialCard6Paragraph3
+        font-size: 1.8vh
+        top: 25vh
+    .tutorialCard6InfoBoxes
+        position: absolute
+        top: 36vh
+        display: flex
+        gap: 3vh
+    .tutorialCard6NeuronInfoBox
+        height: 27.5vh
+    .tutorialCard6SynapseInfoBox
+        height: 27.5vh
+    .tutorialCard6FilterInfoBox
+        height: 27.5vh
+
+.AcknowledgementsCard
+    display: flex
+    flex-direction: column
+    .acknowledgementsCardParagraph1
+        top: 8vh
+    .acknowledgementsCardParagraph2
+        top: 30vh
+    .acknowledgementsCardResourcesList
+        white-space: normal
+        width: 50vh
+        position: absolute
+        top: 40vh
+        font-size: 2vh
+        li
+            width: 50vh
+            overflow-wrap: break-word

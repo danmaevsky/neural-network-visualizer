@@ -1,0 +1,155 @@
+.CNNLayerInfoBox
+    font-size: 2vh
+    outline: none
+    position: absolute
+    top: 0.5vh
+    right: 0.6vh
+    animation: slideIn 0.5s
+    width: 35vh
+    height: calc(100vh - 14vh)
+    background-color: white
+    border: solid 0.3vh
+    border-radius: 0.5vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5vh
+    .layerHeader
+        width: 30vh
+        padding-top: 2vh
+        font-size: 3.5vh
+    .propertiesHeader
+        margin-top: -6vh
+        width: 30vh
+        font-size: 3.5vh
+    .properties
+        display: flex
+        flex-direction: column
+        gap: 7vh
+        p
+            align-self: flex-start
+
+    .numFiltersText
+        margin-top: -4vh
+        width: 30vh
+        display: flex
+        justify-content: space-between
+
+    .filterSizeProperty
+        margin-top: -4vh
+        width: 30vh
+        display: flex
+        justify-content: space-between
+
+    .filterSizeText
+        user-select: none
+        font-size: 2.5vh
+        margin-top: -5vh
+        display: flex
+        flex-direction: row
+        width: 15vh
+        height: 4vh
+        justify-content: space-between
+        p
+            align-self: center
+            margin: 0
+            padding: 0
+        .filterSizeButton
+            cursor: pointer
+            height: 3vh
+            width: 3vh
+            padding: 0.5vh
+            border-radius: 0.5vh
+            transition: filter 0.2s, background-color 0.2s
+
+        .filterSizeButton:hover
+            background-color: #f0f0f0
+            path
+                fill: #d3d3d3
+                transition: fill 0.2s
+        .filterSizeButton:hover:active
+            background-color: #e0e0e0
+            path
+                fill: #d3d3d3
+                transition: fill 0.2s
+
+        .disabledFilterSizeButton
+            border-radius: 0.5vh
+            filter: brightness(90%)
+            background-color: #f0f0f0
+            height: 3vh
+            width: 3vh
+            padding: 0.5vh
+            transition: filter 0.2s, background-color 0.2s
+            path
+                fill: #d3d3d3
+                transition: fill 0.2s
+
+    .filterButtons
+        margin: -4vh
+        display: flex
+        flex-direction: column
+        width: 30vh
+        .editNumFiltersButton
+            height: 10vh
+            width: 14vh
+            border-radius: 0.5vh
+            transition: filter 0.2s, background-color 0.2s
+        .editNumFiltersButton:hover
+            cursor: pointer
+            background-color: #f0f0f0
+            transition: background-color 0.2s
+        .editNumFiltersButton:hover:active
+            cursor: pointer
+            background-color: #e0e0e0
+            transition: background-color 0.2s
+
+        .disabledEditNumFiltersButton
+            cursor: default
+            height: 10vh
+            width: 14vh
+            filter: brightness(90%)
+            background-color: #f0f0f0
+            border-radius: 0.5vh
+            transition: filter 0.2s, background-color 0.2s
+        div
+            display: flex
+            width: 30vh
+            justify-content: space-between
+
+    .activationFunctions
+        display: flex
+        flex-direction: column
+        gap: 1vh
+        width: 30vh
+        justify-content: space-between
+        .functionButtonsRow
+            display: flex
+            width: 30vh
+            justify-content: space-evenly
+            .selectedFunctionButton
+                background-color: #e3f2ff
+                transition: background-color 0.2s
+            .selectedFunctionButton:hover
+                background-color: #d6e8f9
+                transition: background-color 0.2s
+            .selectedFunctionButton:hover:active
+                background-color: #c3d9ed
+                transition: background-color 0.2s
+            .disabledFunctionButton
+                cursor: default
+                background-color: #e2e2e2
+                cursor: default
+            input
+                cursor: pointer
+                height: 11vh
+                width: 11vh
+                transition: background-color 0.2s
+            .functionButton:hover
+                background-color: #f0f0f0
+                transition: background-color 0.2s
+            .functionButton:hover:active
+                background-color: #dfdfdf
+                transition: background-color 0.2s
+        p
+            align-self: flex-start
