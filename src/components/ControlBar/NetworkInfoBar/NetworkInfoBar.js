@@ -10,7 +10,7 @@ import forwardButton from "../../../resources/Forward.svg";
 
 import { useToggle } from "../../../hooks/useToggle";
 
-const BackendURL = "http://localhost:5000/";
+const BackendURL = process.env.REACT_APP_BACKEND_URL;
 const dataset_mapper = {
     MNIST: "mnist",
     "CIFAR-10": "cifar10",
