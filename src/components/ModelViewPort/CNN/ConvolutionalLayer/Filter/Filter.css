@@ -1,0 +1,336 @@
+@keyframes popIn {
+  0% {
+    transform: scale(0.8, 0.8);
+  }
+  50% {
+    transform: scale(1.01, 1.01);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translate(0, -4vh);
+  }
+  50% {
+    transform: translate(0, 0.6vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translate(0, 4vh);
+  }
+  50% {
+    transform: translate(0, -0.6vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes innerCube {
+  0% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+@keyframes rotateNeg360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.innerCube {
+  transform-origin: center;
+  animation: innerCube infinite 1s;
+}
+
+.innerCube:hover {
+  fill: black;
+}
+
+.redFilter .cls-1 {
+  fill: #c66;
+}
+.redFilter .cls-1, .redFilter .cls-2, .redFilter .cls-3, .redFilter .cls-4, .redFilter .cls-8 {
+  stroke: #231f20;
+}
+.redFilter .cls-1, .redFilter .cls-2, .redFilter .cls-3, .redFilter .cls-4, .redFilter .cls-5, .redFilter .cls-6, .redFilter .cls-7, .redFilter .cls-8 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.redFilter .cls-1, .redFilter .cls-3, .redFilter .cls-4, .redFilter .cls-8 {
+  stroke-width: 0.5px;
+}
+.redFilter .cls-2, .redFilter .cls-8 {
+  fill: none;
+}
+.redFilter .cls-2, .redFilter .cls-5, .redFilter .cls-6, .redFilter .cls-7 {
+  stroke-width: 0.25px;
+}
+.redFilter .cls-3 {
+  fill: #e67372;
+}
+.redFilter .cls-4 {
+  fill: #f37e80;
+}
+.redFilter .cls-5 {
+  fill: #cb9898;
+}
+.redFilter .cls-5, .redFilter .cls-6, .redFilter .cls-7 {
+  stroke: #303030;
+}
+.redFilter .cls-6 {
+  fill: #e6acac;
+}
+.redFilter .cls-7 {
+  fill: #f9bebf;
+}
+
+.orangeFilter .cls-1 {
+  fill: #cdaa66;
+}
+.orangeFilter .cls-1, .orangeFilter .cls-2, .orangeFilter .cls-3, .orangeFilter .cls-4, .orangeFilter .cls-8 {
+  stroke: #231f20;
+}
+.orangeFilter .cls-1, .orangeFilter .cls-2, .orangeFilter .cls-3, .orangeFilter .cls-4, .orangeFilter .cls-5, .orangeFilter .cls-6, .orangeFilter .cls-7, .orangeFilter .cls-8 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.orangeFilter .cls-1, .orangeFilter .cls-3, .orangeFilter .cls-4, .orangeFilter .cls-8 {
+  stroke-width: 0.5px;
+}
+.orangeFilter .cls-2, .orangeFilter .cls-8 {
+  fill: none;
+}
+.orangeFilter .cls-2, .orangeFilter .cls-5, .orangeFilter .cls-6, .orangeFilter .cls-7 {
+  stroke-width: 0.25px;
+}
+.orangeFilter .cls-3 {
+  fill: #e5bf72;
+}
+.orangeFilter .cls-4 {
+  fill: #f4cc7e;
+}
+.orangeFilter .cls-5 {
+  fill: #cbba99;
+}
+.orangeFilter .cls-5, .orangeFilter .cls-6, .orangeFilter .cls-7 {
+  stroke: #303030;
+}
+.orangeFilter .cls-6 {
+  fill: #e6d3ac;
+}
+.orangeFilter .cls-7 {
+  fill: #f9e5be;
+}
+
+.greenFilter .cls-1 {
+  fill: #89c767;
+}
+.greenFilter .cls-1, .greenFilter .cls-2, .greenFilter .cls-3, .greenFilter .cls-4, .greenFilter .cls-8 {
+  stroke: #231f20;
+}
+.greenFilter .cls-1, .greenFilter .cls-2, .greenFilter .cls-3, .greenFilter .cls-4, .greenFilter .cls-5, .greenFilter .cls-6, .greenFilter .cls-7, .greenFilter .cls-8 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.greenFilter .cls-1, .greenFilter .cls-3, .greenFilter .cls-4, .greenFilter .cls-8 {
+  stroke-width: 0.5px;
+}
+.greenFilter .cls-2, .greenFilter .cls-8 {
+  fill: none;
+}
+.greenFilter .cls-2, .greenFilter .cls-5, .greenFilter .cls-6, .greenFilter .cls-7 {
+  stroke-width: 0.25px;
+}
+.greenFilter .cls-3 {
+  fill: #a0cf72;
+}
+.greenFilter .cls-4 {
+  fill: #add479;
+}
+.greenFilter .cls-5 {
+  fill: #a9cb98;
+}
+.greenFilter .cls-5, .greenFilter .cls-6, .greenFilter .cls-7 {
+  stroke: #303030;
+}
+.greenFilter .cls-6 {
+  fill: #c1dfac;
+}
+.greenFilter .cls-7 {
+  fill: #d4e8bb;
+}
+
+.tealFilter .cls-1 {
+  fill: #6dc497;
+}
+.tealFilter .cls-1, .tealFilter .cls-2, .tealFilter .cls-3, .tealFilter .cls-4, .tealFilter .cls-8 {
+  stroke: #231f20;
+}
+.tealFilter .cls-1, .tealFilter .cls-2, .tealFilter .cls-3, .tealFilter .cls-4, .tealFilter .cls-5, .tealFilter .cls-6, .tealFilter .cls-7, .tealFilter .cls-8 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.tealFilter .cls-1, .tealFilter .cls-3, .tealFilter .cls-4, .tealFilter .cls-8 {
+  stroke-width: 0.5px;
+}
+.tealFilter .cls-2, .tealFilter .cls-8 {
+  fill: none;
+}
+.tealFilter .cls-2, .tealFilter .cls-5, .tealFilter .cls-6, .tealFilter .cls-7 {
+  stroke-width: 0.25px;
+}
+.tealFilter .cls-3 {
+  fill: #86cba3;
+}
+.tealFilter .cls-4 {
+  fill: #93d0ab;
+}
+.tealFilter .cls-5 {
+  fill: #98cbb1;
+}
+.tealFilter .cls-5, .tealFilter .cls-6, .tealFilter .cls-7 {
+  stroke: #303030;
+}
+.tealFilter .cls-6 {
+  fill: #b0dcc5;
+}
+.tealFilter .cls-7 {
+  fill: #c5e5d3;
+}
+
+.blueFilter .cls-1 {
+  fill: #6ac;
+}
+.blueFilter .cls-1, .blueFilter .cls-2, .blueFilter .cls-3, .blueFilter .cls-4, .blueFilter .cls-8 {
+  stroke: #231f20;
+}
+.blueFilter .cls-1, .blueFilter .cls-2, .blueFilter .cls-3, .blueFilter .cls-4, .blueFilter .cls-5, .blueFilter .cls-6, .blueFilter .cls-7, .blueFilter .cls-8 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.blueFilter .cls-1, .blueFilter .cls-3, .blueFilter .cls-4, .blueFilter .cls-8 {
+  stroke-width: 0.5px;
+}
+.blueFilter .cls-2, .blueFilter .cls-8 {
+  fill: none;
+}
+.blueFilter .cls-2, .blueFilter .cls-5, .blueFilter .cls-6, .blueFilter .cls-7 {
+  stroke-width: 0.25px;
+}
+.blueFilter .cls-3 {
+  fill: #73bfe5;
+}
+.blueFilter .cls-4 {
+  fill: #7fccf1;
+}
+.blueFilter .cls-5 {
+  fill: #99bbcb;
+}
+.blueFilter .cls-5, .blueFilter .cls-6, .blueFilter .cls-7 {
+  stroke: #303030;
+}
+.blueFilter .cls-6 {
+  fill: #acd2e4;
+}
+.blueFilter .cls-7 {
+  fill: #bfe6fa;
+}
+
+.purpleFilter .cls-1 {
+  fill: #7266ae;
+}
+.purpleFilter .cls-1, .purpleFilter .cls-2, .purpleFilter .cls-3, .purpleFilter .cls-4, .purpleFilter .cls-8 {
+  stroke: #231f20;
+}
+.purpleFilter .cls-1, .purpleFilter .cls-2, .purpleFilter .cls-3, .purpleFilter .cls-4, .purpleFilter .cls-5, .purpleFilter .cls-6, .purpleFilter .cls-7, .purpleFilter .cls-8 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.purpleFilter .cls-1, .purpleFilter .cls-3, .purpleFilter .cls-4, .purpleFilter .cls-8 {
+  stroke-width: 0.5px;
+}
+.purpleFilter .cls-2, .purpleFilter .cls-8 {
+  fill: none;
+}
+.purpleFilter .cls-2, .purpleFilter .cls-5, .purpleFilter .cls-6, .purpleFilter .cls-7 {
+  stroke-width: 0.25px;
+}
+.purpleFilter .cls-3 {
+  fill: #7a71b4;
+}
+.purpleFilter .cls-4 {
+  fill: #857cba;
+}
+.purpleFilter .cls-5 {
+  fill: #a098ca;
+}
+.purpleFilter .cls-5, .purpleFilter .cls-6, .purpleFilter .cls-7 {
+  stroke: #303030;
+}
+.purpleFilter .cls-6 {
+  fill: #b6acd4;
+}
+.purpleFilter .cls-7 {
+  fill: #c7bdde;
+}
+
+.filter {
+  transition: filter 0.2s;
+}
+
+.filter:hover {
+  filter: brightness(90%);
+  transition: filter 0.2s;
+}
+
+.filter:hover:active {
+  filter: brightness(80%);
+  transition: filter 0.2s;
+}
+
+.popIn {
+  animation: popIn 0.5s;
+}
+
+.slideDown {
+  animation: slideDown 0.5s;
+}
+
+.slideUp {
+  animation: slideUp 0.5s;
+}
+
+.darkenShadow {
+  opacity: 0;
+}
+
+.darkenShadow:hover {
+  opacity: 0.1;
+}
+
+.filterSelectCircle {
+  transform-origin: center;
+  stroke-width: 3vh;
+  animation: rotate360 1s infinite linear;
+}
+
+.hexagonMask {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0.5vh;
+  transform-origin: center;
+  animation: rotateNeg360 1s infinite linear;
+}/*# sourceMappingURL=Filter.css.map */

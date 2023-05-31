@@ -1,0 +1,209 @@
+/* ---------------------
+ * VARS */
+/* --------------------- */
+/* ----------------------
+ * KEYFRAMES */
+/* ---------------------- */
+@keyframes popIn {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translate(0, -4vh);
+  }
+  50% {
+    transform: translate(0, 0.6vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translate(0, 4vh);
+  }
+  50% {
+    transform: translate(0, -0.6vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate--activateNeuron-circle {
+  0% {
+    fill: #d1d3d4;
+  }
+  100% {
+    fill: #90d3ff;
+  }
+}
+@keyframes animate--activateNeuron-path1 {
+  0% {
+    fill: #f1f2f2;
+  }
+  100% {
+    fill: #c0e6ff;
+  }
+}
+@keyframes animate--activateNeuron-path2 {
+  0% {
+    fill: #fff;
+  }
+  100% {
+    fill: #f4fbff;
+  }
+}
+@keyframes animate--deactivateNeuron-circle {
+  0% {
+    fill: #90d3ff;
+  }
+  100% {
+    fill: #d1d3d4;
+  }
+}
+@keyframes animate--deactivateNeuron-path1 {
+  0% {
+    fill: #c0e6ff;
+  }
+  100% {
+    fill: #f1f2f2;
+  }
+}
+@keyframes animate--deactivateNeuron-path2 {
+  0% {
+    fill: #f4fbff;
+  }
+  100% {
+    fill: #fff;
+  }
+}
+.neuron {
+  cursor: pointer;
+}
+.neuron .cls-1 {
+  transition: fill 0.4s;
+  fill: #d1d3d4;
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+.neuron .cls-2 {
+  fill: #f1f2f2;
+  transition: fill 0.4s;
+}
+.neuron .cls-3 {
+  fill: #fff;
+  transition: fill 0.4s;
+}
+
+.neuron:hover .cls-1 {
+  fill: #fff4a0;
+  transition: fill 0.4s;
+}
+.neuron:hover .cls-2 {
+  fill: #fff7c9;
+  transition: fill 0.4s;
+}
+.neuron:hover .cls-3 {
+  fill: #fff;
+  transition: fill 0.4s;
+}
+
+.popIn {
+  animation: popIn 0.5s;
+}
+
+.slideDown {
+  animation: slideDown 0.5s;
+}
+
+.slideUp {
+  animation: slideUp 0.5s;
+}
+
+.animate--activate .cls-1 {
+  fill: #90d3ff;
+  transition: fill 0.4s;
+}
+.animate--activate .cls-2 {
+  fill: #c0e6ff;
+  transition: fill 0.4s;
+}
+.animate--activate .cls-3 {
+  fill: #f4fbff;
+  transition: fill 0.4s;
+}
+
+.animate--deactivate .cls-1 {
+  fill: #d1d3d4;
+  transition: fill 0.4s;
+}
+.animate--deactivate .cls-2 {
+  fill: #f1f2f2;
+  transition: fill 0.4s;
+}
+.animate--deactivate .cls-3 {
+  fill: #fff;
+  transition: fill 0.4s;
+}
+
+.isSelected .cls-1 {
+  fill: #fff4a0;
+  transition: fill 0.4s;
+}
+.isSelected .cls-2 {
+  fill: #fff7c9;
+  transition: fill 0.4s;
+}
+.isSelected .cls-3 {
+  fill: #fff;
+  transition: fill 0.4s;
+}
+
+.isShiftSelected .cls-1 {
+  fill: #89d2ff;
+  transition: fill 0.4s;
+}
+.isShiftSelected .cls-2 {
+  fill: #c5edff;
+  transition: fill 0.4s;
+}
+.isShiftSelected .cls-3 {
+  fill: #ffffff;
+  transition: fill 0.4s;
+}
+
+.isShiftSelected:hover .cls-1 {
+  fill: #89d2ff;
+  transition: fill 0.4s;
+}
+.isShiftSelected:hover .cls-2 {
+  fill: #c5edff;
+  transition: fill 0.4s;
+}
+.isShiftSelected:hover .cls-3 {
+  fill: #ffffff;
+  transition: fill 0.4s;
+}
+
+.neuronSelectCircle {
+  transform-origin: center;
+  stroke-width: 0.5vh;
+  animation: rotate360 1s infinite linear;
+}/*# sourceMappingURL=Neuron.css.map */

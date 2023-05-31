@@ -1,0 +1,120 @@
+@keyframes loadingOrbAnimation {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+.loadingMessage {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 40vh;
+  justify-content: center;
+  position: absolute;
+  padding: 2vh;
+  background-color: white;
+  border: solid 0.3vh;
+  border-radius: 0.5vh;
+  top: 15vh;
+  text-align: center;
+  left: calc(50vw - 20vh);
+  animation: slideIn 0.2s;
+  transition: background-color 0.2s;
+}
+.loadingMessage h2 {
+  font-size: 2vh;
+}
+.loadingMessage h3 {
+  width: 100%;
+  font-size: 1.5vh;
+}
+
+.loadingMessage-done {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 40vh;
+  justify-content: center;
+  position: absolute;
+  padding: 2vh;
+  background-color: #caffd4;
+  border: solid 0.3vh;
+  border-radius: 0.5vh;
+  top: 15vh;
+  text-align: center;
+  left: calc(50vw - 20vh);
+  animation: slideIn 0.2s;
+  transition: background-color 0.2s;
+}
+.loadingMessage-done h2 {
+  font-size: 2vh;
+}
+.loadingMessage-done h3 {
+  width: 100%;
+  font-size: 1.5vh;
+}
+.loadingMessage-done button {
+  cursor: pointer;
+  font-size: 1.8vh;
+  height: 4.5vh;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  padding-left: 3vh;
+  padding-right: 3vh;
+}
+.loadingMessage-done button:hover {
+  background-color: #efefef;
+  color: #3b3b3b;
+  transition: background-color 0.2s;
+}
+.loadingMessage-done button:hover:active {
+  background-color: #e7e7e7;
+  color: #3b3b3b;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.loadingDataOrb11 {
+  offset-distance: 0%;
+  offset-path: path("M32.672,17.011,75.872,67.234");
+  animation: loadingOrbAnimation 0.75s ease-out infinite;
+}
+
+.loadingDataOrb12 {
+  offset-distance: 0%;
+  offset-path: path("M32.672,49.953,75.872,33.212");
+  animation: loadingOrbAnimation 0.75s ease-out infinite;
+  animation-delay: 0.1s;
+}
+
+.loadingDataOrb21 {
+  offset-distance: 0%;
+  offset-path: path("M32.672,49.953,75.872,67.234");
+  animation: loadingOrbAnimation 0.75s ease-out infinite;
+  animation-delay: 0.25s;
+}
+
+.loadingDataOrb22 {
+  offset-distance: 0%;
+  offset-path: path("M32.672,83.435,75.872,33.212");
+  animation: loadingOrbAnimation 0.75s ease-out infinite;
+  animation-delay: 0.5s;
+}
+
+.loadingDataOrb31 {
+  offset-distance: 0%;
+  offset-path: path("M32.672,83.435,75.872,67.234");
+  animation: loadingOrbAnimation 0.75s ease-out infinite;
+  animation-delay: -0.5s;
+}
+
+.loadingDataOrb32 {
+  offset-distance: 0%;
+  offset-path: path("M32.672,16.471,75.872,33.212");
+  animation: loadingOrbAnimation 0.75s ease-out infinite;
+  animation-delay: -0.25s;
+}/*# sourceMappingURL=LoadingMessage.css.map */

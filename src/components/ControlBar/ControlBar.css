@@ -1,1 +1,4 @@
-/* No CSS *//*# sourceMappingURL=ControlBar.css.map */
+.controlBar {
+  position: relative;
+  z-index: 10;
+}/*# sourceMappingURL=ControlBar.css.map */

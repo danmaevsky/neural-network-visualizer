@@ -1,16 +1,11 @@
 .dropdown
+    z-index: 1
     user-select: none
     position: relative
     cursor: pointer
     color: white
     padding: 1vh
     transition: color 0.4s
-    img
-        height: 1vh
-        width: 1.3vh
-        padding-left: 0.5vh
-        padding-bottom: 0.1vh
-        margin: 0
     .arrowDown
         transform: rotate(0deg)
         transition: transform 0.2s
@@ -27,6 +22,7 @@
         top: 5.3vh
         left: 0vh
         padding: 1vh
+        margin: 0vh
         border-radius: 0 0 0.7vh 0.7vh
         width: max-content
         display: flex
@@ -66,3 +62,70 @@
         path
             fill: #00d18b
             transition: fill 0.4s
+
+.disabledDropdown
+    user-select: none
+    position: relative
+    color: #999999
+    transition: color 0.4s
+    padding: 1vh
+    .arrowDown
+        transform: rotate(0deg)
+        transition: transform 0.2s
+        height: 1vh
+        width: 1vh
+        margin: 0
+        path
+            fill: #999999
+            transition: fill 0.4s
+
+.dropdownGlow
+    color: #ffe175
+    user-select: none
+    position: relative
+    cursor: pointer
+    padding: 1vh
+    transition: color 0.4s
+    .arrowDown
+        transform: rotate(0deg)
+        transition: transform 0.2s
+        height: 1vh
+        width: 1vh
+        margin: 0
+        path
+            fill: #ffe175
+            transition: fill 0.4s
+    .menuItems
+        background-color: #2f4565
+        font-size: 1.5vh
+        position: absolute
+        top: 5.3vh
+        left: 0vh
+        padding: 1vh
+        border-radius: 0 0 0.7vh 0.7vh
+        width: max-content
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+
+        .menuItem
+            text-align: left
+            min-width: 12vh
+            width: max-content
+            padding: 1vh 0 1vh 0
+            z-index: 10
+            color: #fff
+        .menuItem:hover
+            color: #cbcbcb
+        .selectedItem
+            text-align: left
+            min-width: 12vh
+            width: max-content
+            padding: 1vh 0 1vh 0
+            z-index: 10
+            color: #ffe175
+
+.dropdownGlow:focus
+    .arrowDown
+        transform: rotate(180deg)
+        transition: transform 0.2s

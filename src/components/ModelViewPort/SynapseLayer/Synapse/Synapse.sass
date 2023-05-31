@@ -1,0 +1,289 @@
+/* ----------------------
+ VARS
+/* ----------------------
+$synapse-outerLine-base-color: #606060
+$synapse-middleLine-base-color: #f0f0f0
+$synapse-innerLine-base-color: #fff
+$synapse-outerLine-isShiftSelected-color: #89d2ff
+$synapse-middleLine-isShiftSelected-color: #c5edff
+$synapse-innerLine-isShiftSelected-color: #ffffff
+$synapse-innerLine-forwardProp-color: #73b9ff
+$synapse-outerLine-backProp-darkGreen: #2f6541
+$synapse-middleLine-backProp-darkGreen: #47ac69
+$synapse-innerLine-backProp-darkGreen: #69c587
+$synapse-outerLine-backProp-green: #71c18c
+$synapse-middleLine-backProp-green: #8fe1aa
+$synapse-innerLine-backProp-green: #b3ffcd
+$synapse-outerLine-backProp-lightGreen: #b0ffca
+$synapse-middleLine-backProp-lightGreen: #c4ffd8
+$synapse-innerLine-backProp-lightGreen: #f7fffa
+$synapse-outerLine-backProp-darkRed: #b25858
+$synapse-middleLine-backProp-darkRed: #f58e8b
+$synapse-innerLine-backProp-darkRed: #ffdbdb
+$synapse-outerLine-backProp-red: #f58e8b
+$synapse-middleLine-backProp-red: #ffdbdb
+$synapse-innerLine-backProp-red: #ffcac4
+$synapse-outerLine-backProp-lightRed: #ffc8c8
+$synapse-middleLine-backProp-lightRed: #ffe7e7
+$synapse-innerLine-backProp-lightRed: #ffffff
+
+/* ----------------------
+ KEYFRAMES
+/* ----------------------
+
+@keyframes fadeIn
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+// forward prop animation
+@keyframes animate--activate
+    0%
+        stroke: $synapse-innerLine-base-color
+    10%
+        stroke: $synapse-innerLine-forwardProp-color
+    100%
+        stroke-dashoffset: 0
+        stroke: $synapse-innerLine-forwardProp-color
+
+@keyframes animate--deactivate
+    0%
+        stroke: $synapse-innerLine-forwardProp-color
+    100%
+        stroke: $synapse-innerLine-base-color
+
+// darkGreen backprop animation
+@keyframes animate--backpropWash-darkGreen-activate-outerLine
+    0%
+        stroke: $synapse-outerLine-base-color
+    100%
+        stroke: $synapse-outerLine-backProp-darkGreen
+
+@keyframes animate--backpropWash-darkGreen-activate-middleLine
+    0%
+        stroke: $synapse-middleLine-base-color
+    100%
+        stroke: $synapse-middleLine-backProp-darkGreen
+
+@keyframes animate--backpropWash-darkGreen-activate-innerLine
+    0%
+        stroke: $synapse-innerLine-base-color
+    100%
+        stroke: $synapse-innerLine-backProp-darkGreen
+
+// green backprop animation
+@keyframes animate--backpropWash-green-activate-outerLine
+    0%
+        stroke: $synapse-outerLine-base-color
+    100%
+        stroke: $synapse-outerLine-backProp-green
+
+@keyframes animate--backpropWash-green-activate-middleLine
+    0%
+        stroke: $synapse-middleLine-base-color
+    100%
+        stroke: $synapse-middleLine-backProp-green
+
+@keyframes animate--backpropWash-green-activate-innerLine
+    0%
+        stroke: $synapse-innerLine-base-color
+    100%
+        stroke: $synapse-innerLine-backProp-green
+
+// lightGreen backprop animation
+@keyframes animate--backpropWash-lightGreen-activate-outerLine
+    0%
+        stroke: $synapse-outerLine-base-color
+    100%
+        stroke: $synapse-outerLine-backProp-lightGreen
+
+@keyframes animate--backpropWash-lightGreen-activate-middleLine
+    0%
+        stroke: $synapse-middleLine-base-color
+    100%
+        stroke: $synapse-middleLine-backProp-lightGreen
+
+@keyframes animate--backpropWash-lightGreen-activate-innerLine
+    0%
+        stroke: $synapse-innerLine-base-color
+    100%
+        stroke: $synapse-innerLine-backProp-lightGreen
+
+//darkRed backprop animation
+@keyframes animate--backpropWash-darkRed-activate-outerLine
+    0%
+        stroke: $synapse-outerLine-base-color
+    100%
+        stroke: $synapse-outerLine-backProp-darkRed
+
+@keyframes animate--backpropWash-darkRed-activate-middleLine
+    0%
+        stroke: $synapse-middleLine-base-color
+    100%
+        stroke: $synapse-middleLine-backProp-darkRed
+
+@keyframes animate--backpropWash-darkRed-activate-innerLine
+    0%
+        stroke: $synapse-innerLine-base-color
+    100%
+        stroke: $synapse-innerLine-backProp-darkRed
+
+//red backprop animation
+@keyframes animate--backpropWash-red-activate-outerLine
+    0%
+        stroke: $synapse-outerLine-base-color
+    100%
+        stroke: $synapse-outerLine-backProp-red
+
+@keyframes animate--backpropWash-red-activate-middleLine
+    0%
+        stroke: $synapse-middleLine-base-color
+    100%
+        stroke: $synapse-middleLine-backProp-red
+
+@keyframes animate--backpropWash-red-activate-innerLine
+    0%
+        stroke: $synapse-innerLine-base-color
+    100%
+        stroke: $synapse-innerLine-backProp-red
+
+//lightRed backprop animation
+@keyframes animate--backpropWash-lightRed-activate-outerLine
+    0%
+        stroke: $synapse-outerLine-base-color
+    100%
+        stroke: $synapse-outerLine-backProp-lightRed
+
+@keyframes animate--backpropWash-lightRed-activate-middleLine
+    0%
+        stroke: $synapse-middleLine-base-color
+    100%
+        stroke: $synapse-middleLine-backProp-lightRed
+
+@keyframes animate--backpropWash-lightRed-activate-innerLine
+    0%
+        stroke: $synapse-innerLine-base-color
+    100%
+        stroke: $synapse-innerLine-backProp-lightRed
+
+/* ----------------------
+ CLASSES
+/* ----------------------
+
+.synapse
+    animation: fadeIn 1s
+    line
+        // stroke-width: 0.2vh
+
+.synapse_animate--activate
+    .innerLine
+        stroke-dasharray: 0.5vh
+        stroke-dashoffset: 15vh
+        stroke-linecap: round
+        animation: animate--activate 1s ease-in forwards
+
+.synapse_animate--deactivate
+    .innerLine
+        stroke-dasharray: 0.5vh
+        stroke-linecap: round
+        animation: animate--deactivate 0.5s forwards
+
+// backprop animation classes
+.synapse_animate--backpropWash-darkGreen-activate
+    .outerLine
+        stroke: $synapse-outerLine-backProp-darkGreen
+        transition: stroke 0.5s
+
+    .middleLine
+        stroke: $synapse-middleLine-backProp-darkGreen
+        transition: stroke 0.5s
+    .innerLine
+        stroke: $synapse-innerLine-backProp-darkGreen
+        transition: stroke 0.5s
+
+.synapse_animate--backpropWash-green-activate
+    .outerLine
+        stroke: $synapse-outerLine-backProp-green
+        transition: stroke 0.5s
+
+    .middleLine
+        stroke: $synapse-middleLine-backProp-green
+        transition: stroke 0.5s
+
+    .innerLine
+        stroke: $synapse-innerLine-backProp-green
+        transition: stroke 0.5s
+
+.synapse_animate--backpropWash-lightGreen-activate
+    .outerLine
+        stroke: $synapse-outerLine-backProp-lightGreen
+        transition: stroke 0.5s
+
+    .middleLine
+        stroke: $synapse-middleLine-backProp-lightGreen
+        transition: stroke 0.5s
+
+    .innerLine
+        stroke: $synapse-innerLine-backProp-lightGreen
+        transition: stroke 0.5s
+
+.synapse_animate--backpropWash-darkRed-activate
+    .outerLine
+        stroke: $synapse-outerLine-backProp-darkRed
+        transition: stroke 0.5s
+
+    .middleLine
+        stroke: $synapse-middleLine-backProp-darkRed
+        transition: stroke 0.5s
+
+    .innerLine
+        stroke: $synapse-innerLine-backProp-darkRed
+        transition: stroke 0.5s
+
+.synapse_animate--backpropWash-red-activate
+    .outerLine
+        stroke: $synapse-outerLine-backProp-red
+        transition: stroke 0.5s
+
+    .middleLine
+        stroke: $synapse-middleLine-backProp-red
+        transition: stroke 0.5s
+
+    .innerLine
+        stroke: $synapse-innerLine-backProp-red
+        transition: stroke 0.5s
+
+.synapse_animate--backpropWash-lightRed-activate
+    .outerLine
+        stroke: $synapse-outerLine-backProp-lightGreen
+        transition: stroke 0.5s
+
+    .middleLine
+        stroke: $synapse-middleLine-backProp-lightRed
+        transition: stroke 0.5s
+
+    .innerLine
+        stroke: $synapse-innerLine-backProp-lightRed
+        transition: stroke 0.5s
+
+.synapse_animate--backpropWash-neutral-activate
+    .outerLine
+        stroke: $synapse-outerLine-base-color
+        transition: stroke 0.5s
+
+    .middleLine
+        stroke: $synapse-middleLine-base-color
+        transition: stroke 0.5s
+
+    .innerLine
+        stroke: $synapse-innerLine-base-color
+        transition: stroke 0.5s
+
+.isShiftSelected
+    .outerLine
+        stroke: $synapse-outerLine-isShiftSelected-color
+    .middleLine
+        stroke: $synapse-middleLine-isShiftSelected-color
+    .innerLine
+        stroke: $synapse-innerLine-isShiftSelected-color

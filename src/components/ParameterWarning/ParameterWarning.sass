@@ -1,0 +1,51 @@
+.parameterWarningMessage
+    background-color: #ffd1d1
+    border: solid 0.3vh
+    border-radius: 0.5vh
+    border-color: #000000
+    position: absolute
+    display: flex
+    flex-direction: column
+    gap: 3vh
+    height: 50vh
+    top: 15vh
+    width: 40vh
+    left: calc((100vw - 40vh) / 2)
+    animation: slideIn 0.5s
+    h1
+        margin-top: 3vh
+        font-size: 3vh
+    .parameterWarningMessageParagraph
+        position: relative
+        width: 38vh
+        height: 40vh
+        white-space: normal
+        font-size: 2vh
+    img
+        width: 15vh
+
+.parameterWarningDismissButton
+    display: flex
+    align-items: center
+    height: 5vh
+    width: 10vh
+    position: absolute
+    top: 43vh
+    cursor: pointer
+    background-color: #ff8282
+    transition: background-color 0.2s
+    border-radius: 0.5vh
+    p
+        padding: 0
+        margin: 0
+        vertical-align: middle
+        width: 10vh
+        font-size: 2vh
+
+.parameterWarningDismissButton:hover
+    background-color: #ffaaaa
+    transition: background-color 0.2s
+
+.parameterWarningDismissButton:hover:active
+    background-color: #ffa0a0
+    transition: background-color 0.2s

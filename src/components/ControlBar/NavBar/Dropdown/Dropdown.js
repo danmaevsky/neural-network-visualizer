@@ -1,17 +1,18 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 import { useToggle } from "../../../../hooks/useToggle.js";
-import arrow from "./arrow.svg";
 import "./Dropdown.css";
 
 export function Dropdown(props) {
   // props
   const title = props.title;
+  const selection = props.selection;
   const onSelect = props.onSelect;
   const menuItems = props.menuItems;
+  const isEnabled = props.isEnabled;
+  const willGlow = props.willGlow !== undefined ? props.willGlow : false;
 
   // important states for dropdown component. isExpanded := opened or closed? selection := current item selected
   const [isExpanded, toggleExpanded] = useToggle(false);
-  const [selection, setSelection] = useState(null);
 
   // open the dropdown if it was closed, or blur the dropdown if it was open (leading it to close)
   const dropdownHandleClick = (e) => {
@@ -23,7 +24,12 @@ export function Dropdown(props) {
   };
   // change current selection when clicking on a menuItem
   const itemHandleClick = (event) => {
-    setSelection(event.target.innerText);
+    let s = event.target.innerText;
+    if (s === selection) {
+      onSelect(null);
+    } else {
+      onSelect(s);
+    }
     event.stopPropagation();
   };
   // close the dropdown when it loses focus (e.g. clicking outside of the element)
@@ -33,37 +39,44 @@ export function Dropdown(props) {
     }
   };
 
-  // handling change of selection
-  const firstRender = useRef(true);
-  useEffect(() => {
-    if (firstRender.current) {
-      firstRender.current = false;
-      return;
-    } else {
-      onSelect(selection);
-    }
-  }, [selection]);
-
-  return (
-    <div className="dropdown" tabIndex={-1} onBlur={(e) => onClickOutside(e)} onClick={(e) => dropdownHandleClick(e)}>
-      <div className="dropdownTitle" autoFocus>
-        <p>
-          {title} <DropArrow />
-        </p>
-      </div>
-      {isExpanded ? (
-        <div className="menuItems">
-          {menuItems.map((s) => {
-            return (
-              <div className={s === selection ? "selectedItem" : "menuItem"} key={s} onClick={(e) => itemHandleClick(e)}>
-                <p>{s}</p>
-              </div>
-            );
-          })}
+  if (isEnabled) {
+    return (
+      <div
+        className={willGlow && selection !== null ? "dropdownGlow" : "dropdown"}
+        tabIndex={-1}
+        onBlur={(e) => onClickOutside(e)}
+        onClick={(e) => dropdownHandleClick(e)}
+      >
+        <div className="dropdownTitle">
+          <p>
+            {title} <DropArrow />
+          </p>
         </div>
-      ) : null}
-    </div>
-  );
+        {isExpanded ? (
+          <div className="menuItems">
+            {menuItems.map((s) => {
+              return (
+                <div className={s === selection ? "selectedItem" : "menuItem"} key={s} onClick={(e) => itemHandleClick(e)}>
+                  <p>{s}</p>
+                </div>
+              );
+            })}
+          </div>
+        ) : null}
+      </div>
+    );
+  }
+  if (!isEnabled) {
+    return (
+      <div className="disabledDropdown">
+        <div className="dropdownTitle">
+          <p>
+            {title} <DropArrow />
+          </p>
+        </div>
+      </div>
+    );
+  }
 }
 
 // dropArrow defined as SVG to allow CSS styling

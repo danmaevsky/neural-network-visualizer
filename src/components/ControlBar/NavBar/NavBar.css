@@ -5,15 +5,9 @@
   color: white;
   font-size: 1.75vh;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 * {
@@ -21,29 +15,20 @@
 }
 
 div {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   white-space: nowrap;
 }
 
 .navbarLeft {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .navbarLeft .appTitle {
   font-size: 2.75vh;
 }
-
 .navbarLeft * {
   padding-right: 1vw;
 }
-
 .navbarLeft img {
   height: 6vh;
   width: 6vh;
@@ -51,14 +36,9 @@ div {
 
 .buttonsAndDropdowns {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   width: 100vh;
   gap: 6vh;
 }
@@ -66,24 +46,20 @@ div {
 .clearBoard {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   padding: 1vh;
   cursor: pointer;
   color: white;
-  -webkit-transition: color 0.4s;
   transition: color 0.4s;
 }
 
 .clearBoard:hover {
   color: #00d18b;
-  -webkit-transition: color 0.4s;
   transition: color 0.4s;
 }
 
 .hamburgerButton {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   cursor: pointer;
   margin-right: 1vw;
   margin-left: 5vh;
@@ -91,17 +67,27 @@ div {
   height: 3vh;
   width: 3vh;
 }
-
 .hamburgerButton rect {
   stroke: #303030;
   fill: white;
-  -webkit-transition: fill 0.4s;
   transition: fill 0.4s;
 }
 
 .hamburgerButton:hover rect {
   fill: #00d18b;
-  -webkit-transition: fill 0.4s;
   transition: fill 0.4s;
 }
-/*# sourceMappingURL=NavBar.css.map */
+
+.hamburgerButtonOpen {
+  flex-shrink: 0;
+  cursor: pointer;
+  margin-right: 1vw;
+  margin-left: 5vh;
+  padding: 1vh;
+  height: 3vh;
+  width: 3vh;
+}
+.hamburgerButtonOpen rect {
+  fill: #00d18b;
+  transition: fill 0.4s;
+}/*# sourceMappingURL=NavBar.css.map */

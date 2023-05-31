@@ -1,0 +1,241 @@
+.tutorialCards {
+  background-color: white;
+  position: absolute;
+  top: 15vh;
+  left: calc((100vw - 90vh) / 2);
+  height: 70vh;
+  width: 90vh;
+  border: solid 0.3vh;
+  border-radius: 5px;
+}
+.tutorialCards button {
+  cursor: pointer;
+  position: absolute;
+  top: 64vh;
+  font-size: 1.8vh;
+  height: 4.5vh;
+  border: none;
+  border-radius: 5px;
+  background-color: #edb06b;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+.tutorialCards button:hover {
+  background-color: #fad28e;
+  color: #3b3b3b;
+  transition: background-color 0.2s;
+}
+.tutorialCards button:hover:active {
+  background-color: #efc987;
+  color: #3b3b3b;
+  transition: background-color 0.2s, color 0.2s;
+}
+.tutorialCards p {
+  white-space: normal;
+  position: absolute;
+  font-size: 2vh;
+  width: 80vh;
+  text-align: center;
+}
+.tutorialCards .tutorialHeader {
+  position: absolute;
+  top: 2vh;
+  font-size: 3vh;
+}
+.tutorialCards .skipTutorialButton {
+  left: 3vh;
+  width: 15vh;
+}
+.tutorialCards .nextButton {
+  right: 3vh;
+  width: 8vh;
+}
+.tutorialCards .prevButton {
+  right: 12vh;
+  width: 12vh;
+}
+.tutorialCards .exitButton {
+  right: 3vh;
+  width: 8vh;
+}
+
+.tutorialWelcomeCard {
+  display: flex;
+  flex-direction: column;
+}
+.tutorialWelcomeCard .tutorialWelcomeCardParagraph1 {
+  top: 44vh;
+}
+.tutorialWelcomeCard .tutorialWelcomeCardParagraph2 {
+  top: 51vh;
+}
+.tutorialWelcomeCard img {
+  position: absolute;
+  top: 6vh;
+  height: 40vh;
+  width: 40vh;
+}
+
+.tutorialCard1 {
+  display: flex;
+  flex-direction: column;
+}
+.tutorialCard1 .tutorialCard1Paragraph1 {
+  top: 8vh;
+}
+.tutorialCard1 .tutorialCard1Paragraph2 {
+  top: 23vh;
+}
+.tutorialCard1 img {
+  position: absolute;
+  top: 40vh;
+  height: 20vh;
+  width: 20vh;
+}
+
+.tutorialCard2 {
+  display: flex;
+  flex-direction: column;
+}
+.tutorialCard2 .tutorialCard2Paragraph1 {
+  top: 8vh;
+}
+.tutorialCard2 .tutorialCard2NetworkList {
+  position: absolute;
+  top: 21vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.tutorialCard2 .tutorialCard2NetworkList .tutorialCard2NetworkListItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2vh;
+}
+.tutorialCard2 .tutorialCard2NetworkList .tutorialCard2NetworkListItem p {
+  position: relative;
+  font-size: 1.7vh;
+}
+
+.tutorialCard3 {
+  display: flex;
+  flex-direction: column;
+}
+.tutorialCard3 .tutorialCard3Paragraph1 {
+  top: 8vh;
+}
+.tutorialCard3 .tutorialCard3Paragraph2 {
+  top: 27vh;
+}
+.tutorialCard3 .tutorialCard3Paragraph3 {
+  top: 46vh;
+}
+.tutorialCard3 img {
+  position: relative;
+  width: 80vh;
+  top: 37vh;
+}
+
+.tutorialCard4 {
+  display: flex;
+  flex-direction: column;
+}
+.tutorialCard4 .tutorialCard4Paragraph1 {
+  top: 8vh;
+}
+.tutorialCard4 .tutorialCard4Paragraph2 {
+  top: 35vh;
+}
+.tutorialCard4 .tutorialCard4InfoBoxes {
+  position: relative;
+  top: 20vh;
+  display: flex;
+  gap: 10vh;
+}
+.tutorialCard4 img {
+  height: 40vh;
+}
+
+.tutorialCard5 {
+  display: flex;
+  flex-direction: column;
+}
+.tutorialCard5 .tutorialCard5Paragraph1 {
+  top: 10vh;
+}
+.tutorialCard5 .tutorialCard5Paragraph2 {
+  top: 47vh;
+}
+.tutorialCard5 img {
+  position: absolute;
+  width: 10vh;
+}
+.tutorialCard5 .tutorialCard5RedFilter {
+  top: 32vh;
+  left: 20vh;
+}
+.tutorialCard5 .tutorialCard5GreenFilter {
+  top: 32vh;
+  right: 20vh;
+}
+.tutorialCard5 .tutorialCard5BlueFilter {
+  top: 32vh;
+  left: 40vh;
+}
+
+.tutorialCard6 {
+  display: flex;
+  flex-direction: column;
+}
+.tutorialCard6 .tutorialCard6Paragraph1 {
+  top: 8vh;
+}
+.tutorialCard6 .tutorialCard6VisualizeButton {
+  position: absolute;
+  width: 12vh;
+  top: 15vh;
+}
+.tutorialCard6 .tutorialCard6Paragraph2 {
+  top: 21vh;
+}
+.tutorialCard6 .tutorialCard6Paragraph3 {
+  font-size: 1.8vh;
+  top: 25vh;
+}
+.tutorialCard6 .tutorialCard6InfoBoxes {
+  position: absolute;
+  top: 36vh;
+  display: flex;
+  gap: 3vh;
+}
+.tutorialCard6 .tutorialCard6NeuronInfoBox {
+  height: 27.5vh;
+}
+.tutorialCard6 .tutorialCard6SynapseInfoBox {
+  height: 27.5vh;
+}
+.tutorialCard6 .tutorialCard6FilterInfoBox {
+  height: 27.5vh;
+}
+
+.AcknowledgementsCard {
+  display: flex;
+  flex-direction: column;
+}
+.AcknowledgementsCard .acknowledgementsCardParagraph1 {
+  top: 8vh;
+}
+.AcknowledgementsCard .acknowledgementsCardParagraph2 {
+  top: 30vh;
+}
+.AcknowledgementsCard .acknowledgementsCardResourcesList {
+  white-space: normal;
+  width: 50vh;
+  position: absolute;
+  top: 40vh;
+  font-size: 2vh;
+}
+.AcknowledgementsCard .acknowledgementsCardResourcesList li {
+  width: 50vh;
+  overflow-wrap: break-word;
+}/*# sourceMappingURL=TutorialCards.css.map */
