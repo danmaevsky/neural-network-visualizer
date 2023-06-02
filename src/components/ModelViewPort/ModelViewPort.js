@@ -50,7 +50,7 @@ export function ModelViewPort(props) {
     if (modelParameters.networkType === null /*|| modelParameters.dataset === null || modelParameters.dataset === undefined*/) {
         return (
             <div className="modelViewPortNull">
-                <h1>Start by selecting a Dataset and type of Algorithm from the dropdowns above!</h1>
+                <h1>Start by selecting a Preset, or by selecting a Dataset and type of Algorithm from the dropdowns above!</h1>
             </div>
         );
     }
