@@ -131,14 +131,14 @@ export function NavBar(props) {
                 <h1 className="appTitle">Neural Network Visualizer</h1>
             </div>
             <div className="buttonsAndDropdowns">
-                {/* <Dropdown
+                <Dropdown
                     title="Presets"
                     menuItems={presetsDropdownItems}
                     selection={presetSelection}
                     onSelect={presetsOnSelect}
                     isEnabled={!isAnimating}
                     willGlow={true}
-                ></Dropdown> */}
+                ></Dropdown>
                 <Dropdown
                     title="Datasets"
                     menuItems={datasetsDropdownItems}
@@ -305,7 +305,7 @@ function PresetSelectMNIST_MLP(setModelParameters) {
         networkType: "Multilayer Perceptron Network",
         dataset: "MNIST",
         numNeuronsPerLayer: [10, 10, 10, 10, 10, 10, 10, 10],
-        activationFunctions: ["ReLU", "ReLU", "ReLU", "ReLU", "ReLU", "ReLU", "ReLU", "ReLU"],
+        activationFunctions: ["Leaky ReLU", "Leaky ReLU", "Leaky ReLU", "Leaky ReLU", "Leaky ReLU", "Leaky ReLU", "Leaky ReLU", "Leaky ReLU"],
         layerDisplay: new Array(10),
         synapseDisplay: new Array(10),
         accuracies: {
@@ -360,7 +360,7 @@ function PresetSelectMNIST_CNN(setModelParameters) {
         numFilters: 6,
         filterSize: 4,
         filterDepth: filterDepth,
-        activationFunction: "ReLU",
+        activationFunction: "Leaky ReLU",
         filterWeights: [weightTensor, weightTensor, weightTensor, weightTensor, weightTensor, weightTensor],
         activationMaps: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
         filterWeightHistories: [[], [], [], [], [], []],
@@ -374,7 +374,7 @@ function PresetSelectMNIST_CNN(setModelParameters) {
             numFilters: 6,
             filterSize: 4,
             filterDepth: filterDepth,
-            activationFunction: "ReLU",
+            activationFunction: "Leaky ReLU",
             filterWeights: [weightTensor, weightTensor, weightTensor, weightTensor, weightTensor, weightTensor],
             activationMaps: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
             filterWeightHistories: [[], [], [], [], [], []],
@@ -390,7 +390,7 @@ function PresetSelectCIFAR_10_MLP(setModelParameters) {
         networkType: "Multilayer Perceptron Network",
         dataset: "CIFAR-10",
         numNeuronsPerLayer: [10, 10, 10, 10, 10, 10, 10, 10],
-        activationFunctions: ["ReLU", "ReLU", "ReLU", "ReLU", "ReLU", "ReLU", "ReLU", "ReLU"],
+        activationFunctions: ["Leaky ReLU", "Leaky ReLU", "Leaky ReLU", "Leaky ReLU", "Leaky ReLU", "Leaky ReLU", "Leaky ReLU", "Leaky ReLU"],
         layerDisplay: new Array(10),
         synapseDisplay: new Array(10),
         accuracies: {
@@ -445,7 +445,7 @@ function PresetSelectCIFAR_10_CNN(setModelParameters) {
         numFilters: 6,
         filterSize: 4,
         filterDepth: filterDepth,
-        activationFunction: "ReLU",
+        activationFunction: "Leaky ReLU",
         filterWeights: [weightTensor, weightTensor, weightTensor, weightTensor, weightTensor, weightTensor],
         activationMaps: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
         filterWeightHistories: [[], [], [], [], [], []],
@@ -459,7 +459,7 @@ function PresetSelectCIFAR_10_CNN(setModelParameters) {
             numFilters: 6,
             filterSize: 4,
             filterDepth: filterDepth,
-            activationFunction: "ReLU",
+            activationFunction: "Leaky ReLU",
             filterWeights: [weightTensor, weightTensor, weightTensor, weightTensor, weightTensor, weightTensor],
             activationMaps: ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
             filterWeightHistories: [[], [], [], [], [], []],

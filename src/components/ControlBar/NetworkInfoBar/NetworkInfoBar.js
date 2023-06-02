@@ -270,6 +270,7 @@ async function fetchModelDataMLP(modelParameters, setTrainedModelData, setLoadin
         dataset: dataset_mapper[modelParameters.dataset],
         numNeuronsPerLayer: modelParameters.numNeuronsPerLayer,
         activationFunctions: modelParameters.activationFunctions.map((actFunc) => activation_function_mapper[actFunc]),
+        preset: modelParameters.preset ? modelParameters.preset : "none",
     };
 
     // build the request object
@@ -507,6 +508,7 @@ function getRelevantParamsCNN(modelParameters) {
         networkType: modelParameters.networkType,
         dataset: dataset_mapper[modelParameters.dataset],
         layerInfo: relevantLayerInfo,
+        preset: modelParameters.preset ? modelParameters.preset : "none",
     };
     return relevantParams;
 }
