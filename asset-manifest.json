@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/neural-network-visualizer/static/css/main.c1b79e27.css",
-    "main.js": "/neural-network-visualizer/static/js/main.f24fab59.js",
+    "main.js": "/neural-network-visualizer/static/js/main.310e85f4.js",
     "static/js/787.e4170cb7.chunk.js": "/neural-network-visualizer/static/js/787.e4170cb7.chunk.js",
     "static/media/SynapseInfoBox.png": "/neural-network-visualizer/static/media/SynapseInfoBox.5fc2b4e15b9d5fdf4f9a.png",
     "static/media/NeuronInfoBox.png": "/neural-network-visualizer/static/media/NeuronInfoBox.bf49063c05108f81e373.png",
@@ -33,11 +33,11 @@
     "static/media/Pause.svg": "/neural-network-visualizer/static/media/Pause.bde29e7f067929061c2bb463a8a1ad15.svg",
     "static/media/Play.svg": "/neural-network-visualizer/static/media/Play.3ea9adc08a5201d6534c33d5bacfe767.svg",
     "main.c1b79e27.css.map": "/neural-network-visualizer/static/css/main.c1b79e27.css.map",
-    "main.f24fab59.js.map": "/neural-network-visualizer/static/js/main.f24fab59.js.map",
+    "main.310e85f4.js.map": "/neural-network-visualizer/static/js/main.310e85f4.js.map",
     "787.e4170cb7.chunk.js.map": "/neural-network-visualizer/static/js/787.e4170cb7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c1b79e27.css",
-    "static/js/main.f24fab59.js"
+    "static/js/main.310e85f4.js"
   ]
 }
