@@ -332,7 +332,7 @@ function PresetSelectMNIST_MLP(setModelParameters) {
             animationStates: new Array(numSynapses).fill(""),
         };
     }
-    temp.preset = "MNIST_MLP";
+    temp.preset = "MNIST-MLP";
     setModelParameters(temp);
     return;
 }
